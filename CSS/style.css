@@ -1216,10 +1216,11 @@ section.contact_me__container{
     }
 
     .bio__experiences{
+        width: 500px;
         gap: 5px;
     }
     .experience__container{
-        width: 95px;
+        width: 90px;
         padding: 5px 10px;
 
     }
@@ -1332,8 +1333,13 @@ section.contact_me__container{
     }
 
     /*------- CONTACT CONTAINERS -------*/
-
+    .contact_me__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .contact__container{
+        width: 400px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1367,7 +1373,11 @@ section.contact_me__container{
     .icon__TakeMeup{
         position: fixed;
         top: 80%;
-        left: 85%;
+        left: 80%;
+    }
+
+    .copyright__container p{
+        text-align: center;
     }
 }
 
