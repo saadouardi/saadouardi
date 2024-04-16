@@ -1,0 +1,1427 @@
+/* IMPORT FONT FAMILY */
+
+/* Bebas Neue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Work Sans */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* PT Sans Narrow */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+
+/* ----------------  VARIABLES ----------------*/
+:root{
+
+    /* --------- LIGHT MODE --------- */
+
+        /* ---BACKGROUND COLOR--- */
+        --header-backgroundColor-LightMode : rgb(6, 158, 175);
+        --body-backgroundColor-LightMode : rgb(221, 221, 221);
+        --main-backgroundColor-LightMode : rgb(221, 221, 221);
+        --footer-backgroundColor-LightMode :  rgb(6, 158, 175);
+
+        /* ---COLOR--- */
+        --header-color-LightMode : white;
+        --body-color-LightMode : black;
+        --main-color-LightMode : black;
+        --footer-color-LightMode :  white;
+
+    /* --------- DARK MODE --------- */
+
+        /* ---BACKGROUND COLOR--- */
+        --header-backgroundColor-DarkMode : rgb(221, 221, 221);
+        --body-backgroundColor-DarkMode : rgb(39, 39, 39);
+        --main-backgroundColor-DarkMode : rgb(39, 39, 39);
+        --footer-backgroundColor-DarkMode :  rgb(221, 221, 221);
+
+        /* ---COLOR--- */
+        --header-color-DarkMode : black;
+        --body-color-DarkMode : white;
+        --main-color-DarkMode : white;
+        --footer-color-DarkMode :  black;
+
+    /* --------- FONT --------- */
+
+        /* FONT-FAMILY */
+        --title-font-family : 'Work Sans", sans-serif';
+        --text-font-family : 'Bebas Neue", sans-serif';
+        --paragraph-font-family : '"Work Sans", sans-serif';
+
+        /* FONT-SIZE */
+        --title-font-size : 50px;
+        --text-font-size : 25px;
+        --paragraph-font-size : 15px;
+
+        /* FONT-WEIGHT */
+        --title-font-weight : 800;
+        --text-font-weight : 600;
+        --paragraph-font-weight : 400;
+}
+
+/* --------- INITIALISATION --------- */
+
+/* --- BUTTON --- */
+
+button{
+    width: fit-content;
+    height: 50px;
+    background-color: rgb(40, 129, 255);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 2px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+button:hover{
+    background-color: rgb(15, 115, 255);
+    animation: bounceBtn 2s linear;
+    transition: all 0.3s linear;
+    -webkit-animation: bounceBtn 1s linear;
+}
+
+/* --- LINK : A --- */
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    color: gold;
+}
+
+
+/* --- IMG --- */
+img{
+    width: 200px;
+    height: 200px;
+}
+
+/* --- ICONS --- */
+.bi{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.bi:hover{
+    color: gold;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: transparent;
+    color: var(--header-color-LightMode);
+    padding: 5px 0;
+    position:fixed;
+    top:0;
+    z-index: 1000;
+}
+
+body{
+    background-color: var(--body-backgroundColor-LightMode);
+    color: var(--body-color-LightMode);
+}
+main{
+    background: rgb(5,44,126);
+    background: linear-gradient(243deg, rgba(5,44,126,1) 0%, rgba(12,23,53,1) 100%);
+    color: var(--main-color-LightMode);
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    gap: 10px;
+}
+
+footer{
+    background-color: rgb(0, 12, 67);
+    color: var(--footer-color-LightMode);
+    width: 100%;
+    height:fit-content;
+    padding: 20px 0;
+}
+
+header,main,footer{
+    height: fit-content;
+    width: 100%;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 60px 20px;
+    gap: 20px;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: white;
+}
+/* ---------------------- ANIMATIONS ---------------------- */
+
+/* ----------- BOUNCE ----------- */
+@keyframes bounce {
+    0%{
+        transform: translateY(0);
+}
+
+    50%{
+        transform: translateY(-2rem);
+}
+    100%{
+        transform: translateY(0);
+}
+}
+@keyframes bounceBtn {
+    0%{
+        transform: translateY(0);
+}
+
+    50%{
+        transform: translateY(-0.5rem);
+}
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* ----------- FADEIN ----------- */
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    };
+    50%{
+        opacity: 0.5;
+    };
+    100%{
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1s linear;
+}
+
+
+/* ----------------------------- HEADER ------------------------------------ */
+
+/* HEADER ROW 1 DIV */
+.header__row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2px 10px;
+}
+
+/* ----------- WEBSITE NAME ----------- */
+.website__name__container{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.website__name{
+    cursor: pointer;
+    transition: all 0.3s linear;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.website__name:hover{
+    color: gold;
+}
+
+/* ----------- NAV BAR ----------- */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar li a {
+    color: var(--header-color-LightMode);
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.navbar li:hover a {
+    color: gold;
+}
+
+.navbar li a.active__link{
+    color: gold;
+}
+
+
+/* MOBILE NAVBAR */
+.mobile__navbar{
+    display: none;
+    position: relative;
+}
+.mobile__navbar .navbar{
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: 90vw;
+    background-color: black;
+    border-radius: 9px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+.mobile-list_navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.mobile__navbar .navbar li{
+    width: 90%;
+    background-color: rgb(62, 62, 62);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.mobile__navbar .navbar li:hover{
+    background-color: rgb(104, 104, 104);
+}
+.mobile__navbar .navbar li:focus{
+    background-color: red;
+}
+.mobile__navbar .navbar a{
+    color: white;
+}
+
+
+/* ----------- SECTIONS STYLES ------------------ */
+.section__div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap:20px;
+    padding: 0 50px;
+}
+
+.section__title_div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.section__title{
+    font-size: 100px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+.span__title{
+    color:#007ee5;
+}
+
+.section__title_description{
+    font-size: 40px;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.section{
+    font-size: 20px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* ----------- SECTION 1 : SAAD OUARDI ----------- */
+
+.main__section1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.section1__about_me{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Saad-Ouardi-img{
+    height: 400px;
+    width: 500px;
+    border-radius: 56% 44% 49% 51% / 53% 43% 57% 47%;
+    box-shadow: 5px 5px 10px rgb(92, 92, 92);
+    animation: bounce infinite 7s;
+    cursor: pointer;
+}
+.iam__content{
+    font-size: 60px;
+}
+.profession{
+    color: #47abfd;
+    font-size: 40px;
+}
+
+.contact-btn__container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hire-me__btn, .lets-talk__btn{
+    width: 150px;
+    transition: all .3s linear;
+}
+.hire-me__btn{
+    background-color: #007ee5;
+}
+
+.lets-talk__btn{
+    background-color: transparent;
+    border: 2px solid #007ee5;
+    color: #007ee5;
+}
+
+.lets-talk__btn:hover{
+    background-color: white;
+    border: none;
+}
+
+
+li .bg__icon{
+    border: 2px solid #54a7eb;
+    border-radius: 100px;
+    padding: 8px;
+    transition: all .3s ease;
+}
+
+li .bg__icon:hover{
+    background-color: white;
+    border: 2px solid white;
+}
+
+
+.section1__social_media{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    padding: 0 50px;
+    gap:20px;
+}
+.section1__social_media .bi{
+    color: #54a7eb;
+    height: 30px;
+    width: 30px;
+}
+
+.section1__social_media li{
+    list-style: none;
+}
+
+/* ------------ SECTION 2 : ABOUT ME ----------- */
+.main__section2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-bottom: 2px !important;
+}
+
+.section2__div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.about__container{
+    display: flex;
+}
+
+.about-text__container,
+.about-image__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about-image__container{
+    width: 40%;
+}
+.about-text__container{
+    width: 60%;
+}
+
+.about-me__img{
+    height: 90%;
+    width: 90%;
+    border-radius: 24px;
+}
+
+.about-text__container h3{
+    color: gold;
+    font-size: 22px;
+}
+.bio__content{
+    text-align: start;
+    font-size: 18px;
+}
+.bio__experiences{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 20px 0;
+}
+.experience__container{
+    background-color: rgb(44, 97, 255);
+    padding: 5px 15px;
+    border-radius: 4px;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.experience__container:hover{
+    background-color: rgb(15, 115, 255);
+}
+.bio__my_cv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.download-cv__btn{
+    background-color: #007ee5;
+}
+.download-cv__btn a,
+.download-cv__btn .bi{
+    color: white;
+}
+
+/* ----------- SECTION 3 : SKILLS ----------- */
+
+.skills-list__container{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.skills__section{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills{
+    width: 500px;
+    height: 350px;
+    border: 2px solid #007ee5;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px 0;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.skills:hover{
+    box-shadow: .5px .5px 5px grey;
+}
+
+.skill__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill__container h3{
+    font-size: 20px;
+}
+
+/* .skill-icon{
+    height: 50px;
+    width: 50px;
+} */
+.progression-bar__container{
+    height: 12px;
+    border: 2px solid #007ee5;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px 4px;
+}
+.progression-bar__value{
+    background-color: #007ee5;
+    border-radius: 4px;
+    width: 90%;
+    height: 10px;
+}
+
+.HTML__container .progression-bar__value{
+    width: 90%;
+}
+.CSS__container .progression-bar__value{
+    width: 80%;
+}
+.JS__container .progression-bar__value{
+    width: 70%;
+}
+.REACT__container .progression-bar__value{
+    width: 60%;
+}
+
+/* ----------- SECTION 4 : SERVICES ----------- */
+.services__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.service{
+    background-color: #007ee5;
+    height: fit-content;
+    width: 200px;
+    padding: 70px 5px 10px 5px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: all .3s linear;
+}
+
+.service:hover{
+    cursor: pointer;
+    transform: translateY(-0.5rem);
+}
+
+.service svg{
+    width: 60px;
+    height: 60px;
+    color:white;
+}
+.service h1{
+    text-align: center;
+    font-size: 30px;
+}
+.service a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.service button{
+    background-color: white;
+    color:#007ee5;
+    animation: none;
+    transition: all .4s ease;
+}
+
+.service button span{
+    font-size: 16px;
+    font-weight: 500;
+}
+.service .view-more__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.service a svg{
+    color:#007ee5;
+    width: 20px;
+    height: 20px;
+}
+.service a svg:hover{
+    color:#007ee5;
+}
+
+
+/* ----------- SECTION : RESUME ----------- */
+.resume{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.resume__subtitle{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    gap: 8px;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.resume__subtitle svg{
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+
+.resume__subtitle:hover svg,
+.resume__subtitle:hover h1{
+    color: gold;
+}
+
+
+.resume-main__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.resume__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.resume__container{
+    width: 480px;
+    height: 160px;
+    background-color: rgb(44, 97, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    border-radius: 9px;
+    padding: 25px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+}
+
+.resume__container:hover{
+    background-color:  rgb(15, 115, 255);
+    box-shadow: .5px .5px 5px white;
+}
+.resume__container p{
+    font-size: 20px;
+    font-weight: 700;
+}
+.resume__container h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+.resume__container h6{
+    font-size: 15px;
+    font-weight: 600;
+    color: gold;
+}
+/* ----------- SECTION 5 : PORTFOLIO ----------- */
+.portfolio__slider{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 10px;
+    gap: 50px;
+}
+
+.slider__content{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.project__description{
+    color: #007ee5;
+}
+
+.slider__content svg{
+    width: 40px;
+    height: 40px;
+    color:#007ee5;
+}
+.slider__content svg:hover{ 
+    color:#1194ff;
+}
+
+.portfolio__content{
+    display: flex;
+    gap: 20px;
+    width:500px;
+    height: 200px;
+}
+
+.portfolio__details{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.checknow-btn__slider .bi{
+    color: white;
+}
+.checknow-btn__slider:hover a{
+    color: white;
+}
+.project__img{
+    width: 200px;
+    height: 200px;
+    border-radius: 9px;
+}
+.project__img::selection{
+    color:none;
+    background-color: transparent;
+}
+
+.slider__circles{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.slider__circles .circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: white;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.slider__circles .circle:hover{
+    background-color: rgb(118, 118, 118);
+}
+
+.slider__circles .circle__active{
+    width:40px;
+    height: 15px;
+    border-radius: 25px;
+    background-color: #007ee5;
+}
+
+/* ----------- SECTION 6 : CONTACT ME ----------- */
+
+
+/* ----------- FORM -----------*/
+form{
+    display: flex;
+    align-items: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    gap: 15px;
+    padding: 20px 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+form:hover{
+    transform: translateY(-0.5rem);
+}
+
+.input__container{
+    position: relative;
+    height: 40px;
+    width: 300px;
+}
+
+form input{
+    height: 40px;
+    width: 300px;
+    background-color: transparent;
+    border: 2px solid #007ee5;
+    color: white;
+    padding-left: 40px;
+    border-radius: 5px;
+    outline: none;
+}
+
+form .email-subject__input{
+    width: calc(600px + 20px);
+    padding-left: 15px;
+}
+form textarea{
+    width: calc(600px + 20px);
+    background-color: transparent;
+    border: 2px solid #007ee5;
+    color: white;
+    padding-top: 10px;
+    padding-left: 15px;
+    border-radius: 5px;
+    outline: none;
+}
+
+form input[type="submit"]{
+    border: none;
+    background-color: #007ee5;
+    color: white;
+    padding: 0;
+    transition: all 0.3s linear;
+}
+
+form input[type="submit"]:hover{
+    background-color: #8936ff;
+}
+
+form input,
+form textarea{
+    transition: all .3s all;
+}
+
+.input__container:hover form input,
+.input__container:hover form textarea,
+.input__container:hover form svg{
+    transform: scale(.99);
+    color: red;
+}
+
+form input::placeholder,
+form textarea::placeholder{
+    color: white;
+}
+
+form input:focus , form textarea:focus{
+    border: solid 1px white;
+}
+form .bi{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translate(-50%,-50%);
+}
+form .bi:hover{
+    color: white;
+}
+
+.input-list__container{
+    display: flex;
+    gap: 20px;
+}
+
+.copyright__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+
+/* ----------------------CONTACT----------------------*/
+
+section.contact_me__container{
+    height: fit-content;
+}
+.contact-me__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.contact{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.contact .icon__container{
+    background-color:  white;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px 9px 0 0;
+}
+
+.contact .contact__details{
+    background-color:  #007ee5;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 9px 9px;
+    padding-left: 10px;
+}
+
+.contact__details h5{
+    font-size: 12px;
+}
+
+.icon__container svg{
+    width: 35px;
+    height: 35px;
+    color: #007ee5;
+}
+.icon__container svg:hover{
+    color: #007ee5;
+}
+.contact__container a{
+    transition: all 0.4s linear;
+}
+.contact__container a:hover{
+    transform: translateY(-0.5rem);
+}
+
+
+/* -------------------------------------------- OTHER CSS STYLES--------------------------------------------*/
+
+/*----------------------LIGHTBOX----------------------*/
+.lightbox{
+    display: none;
+    width: 600px;
+    height: 500px;
+    padding: 10px 20px;
+    background-color: beige;
+    box-shadow: 1px 1px 20px white;
+    border-radius: 16px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.lightbox .close-btn{
+    color: red;
+    height: 30px;
+    width: 30px;
+    transition: all .3s ease-in-out;
+}
+.lightbox .close-btn:hover{
+    color: black;
+}
+
+.lightbox-content__container{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+
+/*----------------------TAKE ME UP----------------------*/
+.icon__TakeMeup{
+    color: white;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    animation: bounce 3s infinite;
+}
+.icon__TakeMeup:hover{
+    height: 50px;
+    width: 50px;
+    animation: bounceBtn 2s linear;
+}
+
+
+
+
+
+/*---------------------- MOBILE VERSION----------------------*/
+
+
+@media screen and (max-width: 768px){
+
+    /* INITIALISATION */
+    header{
+        padding:0;
+    }
+
+    section{
+        padding: 40px;
+    }
+
+
+    /* NAVBAR */
+    .mobile__navbar{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+
+
+    .main__section1{
+        padding: 0;
+    }
+
+    .section__title{
+        font-size: 50px;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+    }
+
+    .section1__my_image{
+        display:none;
+    }
+
+    .section1__about_me h1,
+    .section1__about_me h3,
+    .section1__about_me h5{
+        text-align: start;
+    }
+
+    .contact-btn__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-btn__container button{
+        flex-grow: 1;
+    }
+
+    .section1__social_media{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    /*------------ SECTION : MY SKILLS  ------------*/
+
+    .skill-content__container{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills{
+        width: 100%;
+        height: fit-content;
+        padding: 15px;
+        gap: 15px 0;
+    }
+
+    .skills h3{
+        font-size: 15px;
+    }
+
+
+    .section__title_div h2{
+        font-size: 25px;
+    }
+
+    .section__title_div h3{
+        text-align: center;
+        font-size: 15px;
+    }
+    .bio__container{
+        width: 80%;
+    }
+
+
+    .section5{
+        display:none;
+    }
+
+    /*------------ SECTION : MAIN  ------------*/
+    .section1__about_me h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    .section1__about_me h3{
+        text-align: center;
+        font-size: 20px;
+    }
+    .section1__about_me h5{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .section1__about_me div{
+        width: 300px;
+    }
+
+    /*------------ SECTION : ABOUT ME  ------------*/
+    .about__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main__section2 img{
+        height: 100px;
+        width: 100px;
+    }
+    .bio__container{
+        width: 300px;
+    }
+    .bio__content{
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .bio__experiences{
+        gap: 5px;
+    }
+    .experience__container{
+        width: 95px;
+        padding: 5px 10px;
+
+    }
+    .experience__container:hover{
+        background-color: rgb(15, 115, 255);
+    }
+    .experience__container h3{
+        text-align: center;
+        font-size: 16px;
+    }
+    .experience__container h6{
+        text-align: center;
+        font-size: 12px;
+    }
+    .bio__my_cv{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+    }
+    
+    .download-cv__btn a,
+    .download-cv__btn .bi{
+        color: white;
+    }
+
+
+    /*------------ SECTION : MY SERVICES  ------------*/
+
+    .service{
+        width: 300px;
+    }
+    .service svg{
+        height: 45px;
+        width:45px;
+    }
+    .service h1{
+        font-size: 15px;
+    }
+    .service h4{
+        font-size: 10px;
+    }
+
+
+    /*------------ SECTION : MY RESUME  ------------*/
+
+    .resume__subtitle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .resume__container{
+        width: 300px;
+        height: 100px;
+        gap: 0px;
+    }
+
+    .resume__container p{
+        font-size: 10px;
+    }
+    .resume__container h4{
+        font-size: 12px;
+    }
+    .resume__container h6{
+        font-size: 10px;
+    }
+
+
+    /*------------ SECTION : CONTACT ME  ------------*/
+
+    /*------ FORM -------*/
+    form{
+        display: flex;
+        align-items: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 400px;
+        gap: 15px;
+        padding: 20px 10px;
+        border-radius: 9px;
+        cursor: pointer;
+        transition: all 0.3s linear;
+    }
+
+    .input__container{
+        position: relative;
+        height: 40px;
+        width: 300px;
+    }
+
+    form input{
+        width: 300px;
+    }
+
+    form .email-subject__input{
+        width: 300px;
+    }
+    form textarea{
+        width: 300px;
+    }
+
+    form .input-list__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    /*------- CONTACT CONTAINERS -------*/
+
+    .contact__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact .icon__container{
+        width: 300px;
+    }
+    .contact .contact__details{
+        width: 300px;
+    }
+
+    .contact .icon__container svg{
+        height: 30px;
+        width: 30px;
+    }
+
+    .contact__details h5{
+        font-size: 15px;
+    }
+
+    /* TAKE ME UP */
+
+    .icon__TakeMeup{
+        position: fixed;
+        top: 80%;
+        left: 85%;
+    }
+}
+
+/* ----------- TABLET DEVICES----------- */
+@media only screen and (max-width: 768px ) and (max-width:1023px){
+    .section__div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Saad-Ouardi-img{
+        display: none;
+    }
+
+    .service{
+        width: 180px;
+    }
+}
+
+
+/* ----------- LAPTOP DEVICES----------- */
+@media only screen and (max-width: 1024px ) and (max-width:1439px){
+    .section1__about_me h1,
+    .section1__about_me h3,
+    .section1__about_me h5{
+        text-align: center;
+    }
+    .contact-btn__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Saad-Ouardi-img{
+        display: none;
+    }
+    .section1__social_media{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-image__container{
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .about-me__img{
+        height: 40%;
+        width: 90%;
+    }
+}
+/* ----------- DESCKTOP DEVICES----------- */
+@media only screen and(max-width: 1440px ){
+    
+}
