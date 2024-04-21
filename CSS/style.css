@@ -1293,7 +1293,7 @@ section.contact_me__container{
         align-items: center;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 400px;
+        width: 100%;
         gap: 15px;
         padding: 20px 10px;
         border-radius: 9px;
