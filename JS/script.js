@@ -3,47 +3,54 @@ import projects from "../DATABASE/projects.js";
 
 //----------------------BRIGHT & DARK MODE----------------------//
 
-const BRIGHT_btn = document.querySelectorAll('#BRIGHT_btn');
-const DARK_btn = document.querySelectorAll('#DARK_btn');
-
 const header = document.querySelector('header');
 const main = document.querySelector('main');
 const footer = document.querySelector('footer');
+const ToogleMode = document.querySelectorAll('#toogleMode');
 
 // by default it's light mode :
 let isBRIGHT = true;
 
-
-
-// DARK MODE :
-DARK_btn.forEach(darkBtn =>{
-    darkBtn.addEventListener('click', () => {
-        header.style.backgroundColor = '#31363F';
-        main.style.background = '#222831';
-        footer.style.backgroundColor = '#31363F';
-        isBRIGHT = false;
-        darkBtn.style.display = 'none';
-        BRIGHT_btn.forEach(brightBtn=>{
-            brightBtn.style.display = 'block';
-        });
-    });
+ToogleMode.forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        //--------------------------DARK MODE--------------------------//
+        if(isBRIGHT){
+            // update background colors of the elements :
+            header.style.backgroundColor = '#31363F';
+            main.style.background = '#222831';
+            footer.style.backgroundColor = '#31363F';
+            isBRIGHT=false;
+        //--------------------------BRIGHT MODE--------------------------//
+        }else{
+            // update background colors of the elements :
+            header.style.backgroundColor = 'rgb(0, 12, 67)';
+            main.style.background = 'linear-gradient(243deg, rgba(5,44,126,1) 0%, rgba(12,23,53,1) 100%)';
+            footer.style.backgroundColor = 'rgb(0, 12, 67)';
+            isBRIGHT=true;
+        }
+        btnChecker(isBRIGHT);
+    })
 })
 
-// BRIGHT MODE :
-BRIGHT_btn.forEach(brightBtn=>{
-    brightBtn.style.display = 'none';
-    brightBtn.addEventListener('click', () => {
-        header.style.backgroundColor = 'rgb(0, 12, 67)';
-        main.style.background = 'linear-gradient(243deg, rgba(5,44,126,1) 0%, rgba(12,23,53,1) 100%)';
-        footer.style.backgroundColor = 'rgb(0, 12, 67)';
-        isBRIGHT = true;
-        brightBtn.style.display = 'none';
-        DARK_btn.forEach(darkBtn =>{
-            darkBtn.style.display = 'block';
+function btnChecker(status){
+    if(!status){
+        document.querySelectorAll(`.DARK_btn`).forEach( element =>{
+            element.style.display='none';
         });
-    });
-})
 
+        document.querySelectorAll(`.BRIGHT_btn`).forEach( element =>{
+            element.style.display='block';
+        });
+
+    }else{
+        document.querySelectorAll(`.DARK_btn`).forEach( element =>{
+            element.style.display='block';
+        });
+        document.querySelectorAll(`.BRIGHT_btn`).forEach( element =>{
+            element.style.display='none';
+        });
+    }
+}
 
 
 //---------------------- HEADER ----------------------//
@@ -207,9 +214,6 @@ toggle(index);
 setInterval(toggleRight,5000);
 
 
-
-
-
 // -------------------- OTHERS -------------------- //
 
 // ----- TAKE ME UP ICON ----- //
@@ -219,8 +223,6 @@ takemeup_btn.addEventListener('click', () => {
         behavior:"smooth"
     });
 });
-
-
 
 
 // -------------------- MOBILE VERSION -------------------- //
