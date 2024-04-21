@@ -127,7 +127,8 @@ header{
 }
 
 body{
-    background-color: var(--body-backgroundColor-LightMode);
+    background-color: red;
+    /* background-color: var(--body-backgroundColor-LightMode); */
     color: var(--body-color-LightMode);
 }
 main{
@@ -154,6 +155,7 @@ header,main,footer{
 }
 
 section{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,6 +167,10 @@ section{
 
 h1,h2,h3,h4,h5,h6{
     color: white;
+}
+
+.BRIGHT_btn{
+    display: none;
 }
 /* ---------------------- ANIMATIONS ---------------------- */
 
@@ -485,8 +491,8 @@ li .bg__icon:hover{
 }
 
 .about-me__img{
-    height: 90%;
-    width: 90%;
+    height: 100%;
+    width: 80%;
     border-radius: 24px;
 }
 
@@ -1074,22 +1080,11 @@ section.contact_me__container{
 }
 
 
-
-
-
 /*---------------------- MOBILE VERSION----------------------*/
-
 
 @media screen and (max-width: 768px){
 
     /* INITIALISATION */
-    header{
-        padding:0;
-    }
-
-    section{
-        padding: 40px;
-    }
 
 
     /* NAVBAR */
@@ -1216,7 +1211,7 @@ section.contact_me__container{
     }
 
     .bio__experiences{
-        width: 500px;
+        width: 100%;
         gap: 5px;
     }
     .experience__container{
@@ -1371,6 +1366,7 @@ section.contact_me__container{
     /* TAKE ME UP */
 
     .icon__TakeMeup{
+        display: none;
         position: fixed;
         top: 80%;
         left: 80%;
@@ -1383,6 +1379,7 @@ section.contact_me__container{
 
 /* ----------- TABLET DEVICES----------- */
 @media only screen and (max-width: 768px ) and (max-width:1023px){
+
     .section__div{
         display: flex;
         align-items: center;
