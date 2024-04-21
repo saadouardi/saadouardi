@@ -951,7 +951,7 @@ form .bi:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 0;
+    padding: 20px 10px;
 }
 
 
@@ -969,12 +969,12 @@ section.contact_me__container{
 }
 
 .contact__container{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
-    width: 100%;
 }
 
 .contact{
@@ -985,6 +985,9 @@ section.contact_me__container{
     flex-direction: column;
     cursor: pointer;
     transition: all 0.3s linear;
+}
+.contact a{
+    width: 100%;
 }
 
 .contact .icon__container{
@@ -1332,11 +1335,16 @@ section.contact_me__container{
         align-items: center;
         justify-content: center;
     }
+
     .contact__container{
+        width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
+    .contact__container a{
+        width: 100%;
     }
 
     .contact{
@@ -1372,7 +1380,9 @@ section.contact_me__container{
 
     .copyright__container p{
         text-align: center;
+        font-size: 15px;
     }
+
 }
 
 /* ----------- TABLET DEVICES----------- */
