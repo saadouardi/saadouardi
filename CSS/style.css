@@ -127,8 +127,7 @@ header{
 }
 
 body{
-    background-color: red;
-    /* background-color: var(--body-backgroundColor-LightMode); */
+    background-color: var(--body-backgroundColor-LightMode);
     color: var(--body-color-LightMode);
 }
 main{
@@ -1334,7 +1333,6 @@ section.contact_me__container{
         justify-content: center;
     }
     .contact__container{
-        width: 400px;
         display: flex;
         align-items: center;
         justify-content: center;
