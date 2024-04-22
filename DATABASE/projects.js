@@ -7,7 +7,7 @@ const projects = {
     type:'E-Commerce',
     description: 'E-Commerce Website',
     date:'2020',
-    link:'https://saadouardi.github.io/nike/index.html'
+    link:'https://saadouardi.github.io/MasterIsolation/'
     },
 
     // NIKE
@@ -15,9 +15,9 @@ const projects = {
         image:'./IMG/PROJECTS/nike-logo.jpg',
         name: 'NIKE',
         type:'E-Commerce',
-        description: 'E-Commerce Website',
+        description: 'E-COMMERCE',
         date:'2022',
-        link:''
+        link:'https://saadouardi.github.io/nike/'
     },
 
     // FORTNITE
@@ -25,19 +25,19 @@ const projects = {
     image:'./IMG/PROJECTS/fortnite-logo.png',
     name: 'FORTNITE',
     type:'GAME',
-    description: 'GAMING Website',
+    description: 'GAMING',
     date:'2024',
-    link:'https://saadouardi.github.io/nike/index.html'
+    link:'https://saadouardi.github.io/fortnite/'
     },
 
     // RESTAURANT
     project_4 : {
     image:'./IMG/PROJECTS/restaurant-logo.png',
-    name: 'RESTAURANT',
+    name: 'PARADISE',
     type:'RESTAURANT',
-    description: 'RESTAURANT Website',
+    description: 'RESTAURANT',
     date:'2024',
-    link:'https://saadouardi.github.io/nike/index.html'
+    link:'https://saadouardi.github.io/paradise/'
     },
 
     // METACASHCUP
@@ -45,39 +45,49 @@ const projects = {
         image:'./IMG/PROJECTS/web-logo.webp',
         name: 'METACASHCUP',
         type:'GAMING',
-        description: 'GAMING WEBSITE',
+        description: 'GAMING',
         date:'2018',
-        link:''
+        link:'https://saadouardi.github.io/metacashcup/'
     },
 
     // QUIZ
     project_6 : {
     image:'./IMG/PROJECTS/quiz-logo.webp',
-    name: 'MATH QUIZES',
+    name: 'QUIZ TEST',
     type:'QUIZES',
-    description: 'EDUCATION Website',
+    description: 'EDUCATION',
     date:'2024',
-    link:'https://saadouardi.github.io/nike/index.html'
+    link:'https://saadouardi.github.io/QuizTest/'
     },
 
-    // AI BOX
+    // CHATAI
     project_7 : {
     image:'./IMG/PROJECTS/chatAi-logo.png',
-    name: 'CHAT AI',
+    name: 'ChatAI',
     type:'AI',
-    description: 'CHAT AI Website',
+    description: 'AI',
     date:'2024',
-    link:'https://saadouardi.github.io/nike/index.html'
+    link:'https://saadouardi.github.io/chatAI/'
     },
 
-    // FORMS
+    // SIGNUP FORMS
     project_8 : {
         image:'./IMG/PROJECTS/form-logo.png',
-        name: 'FORM',
+        name: 'SIGNUP FORM',
         type:'FORM',
-        description: 'FORM Website',
+        description: 'SIGN UP',
         date:'2018',
-        link:''
+        link:'https://saadouardi.github.io/signup/'
+    },
+
+    // LOGIN FORMS
+    project_82 : {
+        image:'./IMG/PROJECTS/form-logo.png',
+        name: 'LOGIN FORM',
+        type:'FORM',
+        description: 'LOGIN',
+        date:'2018',
+        link:'https://saadouardi.github.io/login/'
     },
 
     // FACEBOOK
@@ -85,9 +95,9 @@ const projects = {
     image:'./IMG/PROJECTS/facebook-logo.png',
     name: 'FACEBOOK',
     type:'APP',
-    description: 'APP Website',
+    description: 'APP',
     date:'2024',
-    link:'https://saadouardi.github.io/nike/index.html'
+    link:'https://saadouardi.github.io/facebook/'
     },
 
     // CALCULATOR
@@ -95,9 +105,9 @@ const projects = {
     image:'./IMG/PROJECTS/calculator-logo.png',
     name: 'CALCULATOR',
     type:'CALCULATOR',
-    description: 'CALCULATOR Website',
+    description: 'CALCULATOR',
     date:'2024',
-    link:'https://saadouardi.github.io/nike/index.html'
+    link:'https://saadouardi.github.io/calculator/'
     },
 
     // GAME X/O
@@ -105,22 +115,37 @@ const projects = {
         image:'./IMG/PROJECTS/game-logo.png',
         name: 'X/O',
         type:'GAME',
-        description: 'GAME Website',
+        description: 'GAME',
         date:'2018',
-        link:''
+        link:'https://saadouardi.github.io/xo/'
     },
     // DASHBOARD
     project_12 : {
         image:'./IMG/PROJECTS/dashboard-logo.png',
         name: 'DASHBOARD',
         type:'',
-        description: 'ADMIN Website',
+        description: 'ADMIN',
         date:'2018',
-        link:''
+        link:'https://saadouardi.github.io/admin-dashboard/'
     },
-
-
-
+    // CHECKLIST
+    project_13 : {
+        image:'./IMG/PROJECTS/todolist.png',
+        name: 'CHECKLIST',
+        type:'',
+        description: '',
+        date:'2018',
+        link:'https://saadouardi.github.io/checklist/'
+    },
+    // MOBILE
+    project_14 : {
+        image:'./IMG/PROJECTS/mobile-logo.png',
+        name: 'MOBILE',
+        type:'',
+        description: '',
+        date:'2018',
+        link:'https://saadouardi.github.io/mobile/'
+    },
 }
 
 
