@@ -1,8 +1,53 @@
 import projects from "../DATABASE/projects.js";
 
 
-//----------------------BRIGHT & DARK MODE----------------------//
+//----------------------------------------NAVBAR----------------------------------------//
 
+
+//----------NAVBAR----------//
+const link = document.querySelectorAll('.link');
+link.forEach((specLink)=>{
+    specLink.addEventListener('click', ()=>{
+        const section = specLink.dataset.section;
+        document.querySelector(section).scrollIntoView({
+            behavior:"smooth"
+        });
+
+        CloseNavBar(navBar,closeNavBar,OpenNavBar);
+    });
+});
+
+
+
+// -------------------- MOBILE VERSION -------------------- //
+let navBar = document.getElementById('mobile-navbar');
+let OpenNavBar = document.getElementById('open-navbar');
+let closeNavBar = document.getElementById('close-btn');
+
+// close by default"
+navBar.style.display = 'none';
+closeNavBar.style.display = 'none';
+
+OpenNavBar.addEventListener('click',()=>{
+    navBar.style.display = 'block';
+    OpenNavBar.style.display = 'none';
+    closeNavBar.style.display = 'block';
+});
+
+closeNavBar.addEventListener('click', ()=>{
+    navBar.style.display = 'none';
+    closeNavBar.style.display = 'none';
+    OpenNavBar.style.display = 'block';
+});
+
+
+function CloseNavBar(NavBar,CloseBtn,OpenBtn){
+    document.getElementById(`${navBar.id}`).style.display = 'none';
+    document.getElementById(`${CloseBtn.id}`).style.display = 'none';
+    document.getElementById(`${OpenBtn.id}`).style.display = 'block';
+}
+
+//----------------------BRIGHT & DARK MODE----------------------//
 const header = document.querySelector('header');
 const main = document.querySelector('main');
 const footer = document.querySelector('footer');
@@ -29,6 +74,7 @@ ToogleMode.forEach(btn=>{
             isBRIGHT=true;
         }
         btnChecker(isBRIGHT);
+        CloseNavBar(navBar,closeNavBar,OpenNavBar);
     })
 })
 
@@ -74,23 +120,9 @@ window.addEventListener("scroll", () => {
 });
 
 
-//----------NAVBAR----------//
-const link = document.querySelectorAll('.link');
-link.forEach((specLink)=>{
-    specLink.addEventListener('click', ()=>{
-        const section = specLink.dataset.section;
-        const navbar = specLink.dataset.navbar;
-        document.querySelector(section).scrollIntoView({
-            behavior:"smooth"
-        });
-    });
-});
-
-
 //----------------------MAIN SECTION ----------------------//
 
 const HireMeBtn = document.getElementById('HireMeBtn');
-const LetsTalk = document.getElementById('LetsTalkBtn');
 
 HireMeBtn.addEventListener('click',()=>{
     document.querySelector('#section6').scrollIntoView({
@@ -99,19 +131,13 @@ HireMeBtn.addEventListener('click',()=>{
 
     let emailSubject = document.getElementById('EmailSubject').value = 'Looking for a Talented Frontend Developer: Join Us!';
 })
-LetsTalk.addEventListener('click',()=>{
-    document.querySelector('#section6').scrollIntoView({
-        behavior:"smooth"
-    });
-    let emailSubject = document.getElementById('EmailSubject').value = '';
-})
-
 //---------------------- PORTFOLIO SLIDER ----------------------//
 
 // ELEMENTS OF THE SLIDER :
 const project__img = document.getElementById('project__img');
 const project__name = document.getElementById('project__name');
-const project__description = document.getElementById('project__description');
+const project__date = document.getElementById('project__date');
+const project__description = document.querySelectorAll('#project__description');
 const project__link = document.getElementById('project__link');
 
 // TOGGLE ICONS
@@ -142,14 +168,20 @@ function toggle(index){
 
     let default_project = Object.values(projects)[index];
     let project_img = default_project.image;
-    let project_name = default_project.name ;
+    let project_name = default_project.name;
+    let project_date = default_project.date;
     let project_description = default_project.description;
     let project_link = default_project.link;
 
     // DISPLAY DATA BY DEFAULT
     project__img.setAttribute('src', `${project_img}`);
     project__name.textContent = project_name;
-    project__description.textContent = project_description;
+    project__date.textContent = project_date;
+    project__description.forEach(Description =>{
+        Description.textContent = project_description;
+    })
+    
+    
     project__link.setAttribute('href', project_link);
 
 };
@@ -225,49 +257,3 @@ takemeup_btn.addEventListener('click', () => {
 });
 
 
-// -------------------- MOBILE VERSION -------------------- //
-
-// --------------------NAVBAR -------------------- //
-let OpenNavBar = document.getElementById('open-navbar');
-let closeNavBar = document.getElementById('close-btn');
-let navBar = document.getElementById('mobile-navbar');
-
-// close by default"
-navBar.style.display = 'none';
-closeNavBar.style.display = 'none';
-
-OpenNavBar.addEventListener('click',()=>{
-    navBar.style.display = 'block';
-    OpenNavBar.style.display = 'none';
-    closeNavBar.style.display = 'block';
-});
-
-closeNavBar.addEventListener('click', ()=>{
-    navBar.style.display = 'none';
-    closeNavBar.style.display = 'none';
-    OpenNavBar.style.display = 'block';
-});
-
-
-
-// index.js
-document.addEventListener('DOMContentLoaded', function() {
-    const emailForm = document.getElementById('emailForm');
-
-    emailForm.addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        const userFullName = document.getElementById('userFullName').value;
-        const userEmail = document.getElementById('userEmail').value;
-        const userSubject = document.getElementById('userSubject').value;
-        const userMessage = document.getElementById('userMessage').value;
-
-        // You should send this data to your server-side code for sending the email
-        console.log({
-            userFullName,
-            userEmail,
-            userSubject,
-            userMessage
-        });
-    });
-});
