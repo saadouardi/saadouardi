@@ -1,48 +1,43 @@
 const projects = {
 
-    // MASTER ISOLATION
-    project_1 : {
-    image:'./IMG/PROJECTS/MI-logo.jpg',
-    name: 'Master Isolation',
-    type:'E-Commerce',
-    description: 'E-Commerce Website',
-    date:'2020',
-    link:'https://saadouardi.github.io/MasterIsolation/'
+    project_1: {
+        image: './IMG/Projects/MI-logo.jpg',
+        name: 'Master Isolation',
+        type: 'E-Commerce',
+        description: 'Led the development of an innovative e-commerce platform, optimizing user experience and performance.',
+        date: '2021/2024',
+        link: 'https://saadouardi.github.io/MasterIsolation/'
     },
-
-    // NIKE
-    project_2 : {
-        image:'./IMG/PROJECTS/nike-logo.jpg',
+    project_2: {
+        image: './IMG/Projects/nike-logo.jpg',
         name: 'NIKE',
-        type:'E-Commerce',
-        description: 'E-COMMERCE',
-        date:'2022',
-        link:'https://saadouardi.github.io/nike/'
+        type: 'E-Commerce',
+        description: 'Designed and developed an e-commerce website showcasing NIKE brand products.',
+        date: '2022/2024',
+        link: 'https://saadouardi.github.io/nike/'
     },
-
-    // FORTNITE
-    project_3 : {
-    image:'./IMG/PROJECTS/fortnite-logo.png',
-    name: 'FORTNITE',
-    type:'GAME',
-    description: 'GAMING',
-    date:'2024',
-    link:'https://saadouardi.github.io/fortnite/'
+    project_3: {
+        image: './IMG/Projects/fortnite-logo.png',
+        name: 'FORTNITE',
+        type: 'GAME',
+        description: 'Created a gaming website dedicated to FORTNITE enthusiasts, integrating social features and leaderboards.',
+        date: '2024',
+        link: 'https://saadouardi.github.io/fortnite/'
     },
 
     // RESTAURANT
     project_4 : {
-    image:'./IMG/PROJECTS/restaurant-logo.png',
+    image:'./IMG/Projects/restaurant-logo.png',
     name: 'PARADISE',
     type:'RESTAURANT',
     description: 'RESTAURANT',
-    date:'2024',
+    date:'2023/2024',
     link:'https://saadouardi.github.io/paradise/'
     },
 
     // METACASHCUP
     project_5 : {
-        image:'./IMG/PROJECTS/web-logo.webp',
+        image:'./IMG/Projects/web-logo.webp',
         name: 'METACASHCUP',
         type:'GAMING',
         description: 'GAMING',
@@ -52,7 +47,7 @@ const projects = {
 
     // QUIZ
     project_6 : {
-    image:'./IMG/PROJECTS/quiz-logo.webp',
+    image:'./IMG/Projects/quiz-logo.webp',
     name: 'QUIZ TEST',
     type:'QUIZES',
     description: 'EDUCATION',
@@ -62,7 +57,7 @@ const projects = {
 
     // CHATAI
     project_7 : {
-    image:'./IMG/PROJECTS/chatAi-logo.png',
+    image:'./IMG/Projects/chatAi-logo.png',
     name: 'ChatAI',
     type:'AI',
     description: 'AI',
@@ -72,7 +67,7 @@ const projects = {
 
     // SIGNUP FORMS
     project_8 : {
-        image:'./IMG/PROJECTS/form-logo.png',
+        image:'./IMG/Projects/form-logo.png',
         name: 'SIGNUP FORM',
         type:'FORM',
         description: 'SIGN UP',
@@ -82,7 +77,7 @@ const projects = {
 
     // LOGIN FORMS
     project_82 : {
-        image:'./IMG/PROJECTS/form-logo.png',
+        image:'./IMG/Projects/form-logo.png',
         name: 'LOGIN FORM',
         type:'FORM',
         description: 'LOGIN',
@@ -92,7 +87,7 @@ const projects = {
 
     // FACEBOOK
     project_9 : {
-    image:'./IMG/PROJECTS/facebook-logo.png',
+    image:'./IMG/Projects/facebook-logo.png',
     name: 'FACEBOOK',
     type:'APP',
     description: 'APP',
@@ -102,7 +97,7 @@ const projects = {
 
     // CALCULATOR
     project_10 : {
-    image:'./IMG/PROJECTS/calculator-logo.png',
+    image:'./IMG/Projects/calculator-logo.png',
     name: 'CALCULATOR',
     type:'CALCULATOR',
     description: 'CALCULATOR',
@@ -112,7 +107,7 @@ const projects = {
 
     // GAME X/O
     project_11 : {
-        image:'./IMG/PROJECTS/game-logo.png',
+        image:'./IMG/Projects/game-logo.png',
         name: 'X/O',
         type:'GAME',
         description: 'GAME',
@@ -121,7 +116,7 @@ const projects = {
     },
     // DASHBOARD
     project_12 : {
-        image:'./IMG/PROJECTS/dashboard-logo.png',
+        image:'./IMG/Projects/dashboard-logo.png',
         name: 'DASHBOARD',
         type:'',
         description: 'ADMIN',
@@ -130,7 +125,7 @@ const projects = {
     },
     // CHECKLIST
     project_13 : {
-        image:'./IMG/PROJECTS/todolist.png',
+        image:'./IMG/Projects/todolist.png',
         name: 'CHECKLIST',
         type:'',
         description: '',
@@ -139,7 +134,7 @@ const projects = {
     },
     // MOBILE
     project_14 : {
-        image:'./IMG/PROJECTS/mobile-logo.png',
+        image:'./IMG/Projects/mobile-logo.png',
         name: 'MOBILE',
         type:'',
         description: '',
