@@ -115,6 +115,7 @@ img{
 *{
     padding: 0;
     margin: 0;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 header{
@@ -159,17 +160,23 @@ section{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 60px 20px;
+    padding: 20px 20px;
     gap: 20px;
-
 }
 
-h1,h2,h3,h4,h5,h6{
+
+
+h1,h2,h3,h4,h5,h6,p{
     color: white;
 }
 
 .BRIGHT_btn{
     display: none;
+}
+.main-section{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 /* ---------------------- ANIMATIONS ---------------------- */
 
@@ -196,7 +203,11 @@ h1,h2,h3,h4,h5,h6{
 }
     100%{
         transform: translateY(0);
-    }
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
 }
 
 /* ----------- FADEIN ----------- */
@@ -378,6 +389,11 @@ h1,h2,h3,h4,h5,h6{
     flex-direction: column;
     gap: 20px;
 }
+.section1__my_image{
+    position: relative;
+    height: 400px;
+    width: 500px;
+}
 
 .Saad-Ouardi-img{
     height: 400px;
@@ -387,6 +403,23 @@ h1,h2,h3,h4,h5,h6{
     animation: bounce infinite 7s;
     cursor: pointer;
 }
+.Saad-Ouardi-img:hover{
+    filter: blur(5px);
+}
+
+.section1__my_image button{
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+.section1__my_image:hover button{
+    display: block;
+    animation: none;
+    -webkit-animation: none;
+}
+
 .iam__content{
     font-size: 60px;
 }
@@ -403,24 +436,43 @@ h1,h2,h3,h4,h5,h6{
     gap: 20px;
 }
 
-.hire-me__btn, .lets-talk__btn{
+.hire-me__btn, .download-cv__btn{
     width: 150px;
     transition: all .3s linear;
 }
+
 .hire-me__btn{
     background-color: #007ee5;
 }
-
-.lets-talk__btn{
-    background-color: transparent;
-    border: 2px solid #007ee5;
-    color: #007ee5;
+.hire-me__btn:hover{
+    background-color: white;
+    color: black;
 }
 
-.lets-talk__btn:hover{
+.download-cv__btn{
+    background-color: transparent;
+    border: 2px solid #007ee5;
+}
+
+.download-cv__btn:hover{
     background-color: white;
     border: none;
 }
+
+.download-cv__btn svg{
+    height: 20px;
+    width: 20px;
+}
+
+.download-cv__btn a,
+.download-cv__btn svg{
+    color: white;
+}
+.download-cv__btn:hover a,
+.download-cv__btn:hover svg{
+    color: #007ee5;
+}
+
 
 
 li .bg__icon{
@@ -493,6 +545,7 @@ li .bg__icon:hover{
     height: 100%;
     width: 80%;
     border-radius: 24px;
+    border-radius: 100px;
 }
 
 .about-text__container h3{
@@ -528,14 +581,6 @@ li .bg__icon:hover{
     align-items: center;
     justify-content: center;
     padding: 20px 0;
-}
-
-.download-cv__btn{
-    background-color: #007ee5;
-}
-.download-cv__btn a,
-.download-cv__btn .bi{
-    color: white;
 }
 
 /* ----------- SECTION 3 : SKILLS ----------- */
@@ -581,10 +626,24 @@ li .bg__icon:hover{
     font-size: 20px;
 }
 
-/* .skill-icon{
+
+.main-skill__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 5px;
+}
+.skill__img img{
     height: 50px;
     width: 50px;
-} */
+}
+
+.main-skill___container{
+    width: 100%;
+}
+
 .progression-bar__container{
     height: 12px;
     border: 2px solid #007ee5;
@@ -599,19 +658,6 @@ li .bg__icon:hover{
     border-radius: 4px;
     width: 90%;
     height: 10px;
-}
-
-.HTML__container .progression-bar__value{
-    width: 90%;
-}
-.CSS__container .progression-bar__value{
-    width: 80%;
-}
-.JS__container .progression-bar__value{
-    width: 70%;
-}
-.REACT__container .progression-bar__value{
-    width: 60%;
 }
 
 /* ----------- SECTION 4 : SERVICES ----------- */
@@ -712,7 +758,107 @@ li .bg__icon:hover{
 }
 
 
+/*----RESUME MAIN CONTAINER----*/
 .resume-main__container{
+    border: 2px solid #007ee5;
+    background-color: transparent;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px 10px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.4s linear;
+}
+
+.resume-main__container:hover{
+    background-color:  rgb(0, 44, 106);
+    box-shadow: .5px .5px 5px white;
+}
+.resume-main__container h5{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.resume-main__container p{
+    font-size: 15px;
+    font-weight: 700;
+}
+.resume-main__container h4{
+    font-size: 20px;
+    font-weight: 700;
+    
+}
+.resume-main__container h6{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.resume-details__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*----INFO CONTAINER----*/
+.resume-main__container .info__container{
+    height: fit-content !important;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0px 5px;
+}
+.resume-main__container .info__container svg{
+    height:25px;
+    width: 25px;
+    color: #1194ff;
+}
+.resume-main__container .info__container svg:hover{
+    height:25px;
+    width: 25px;
+    color: #3ba7ff;
+}
+
+/*---- RESUME CONTAINER----*/
+.resume-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume-main__container .education__container{
+    width: 100%;
+    display: flex;
+}
+.resume-main__container .content{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.resume-main__container .country-flag__container{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education__container img{
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.country-flag__container img{
+    height: 40px;
+    width: 0px;
+    border-radius: 9px;
+}
+
+.resume-global__container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -727,38 +873,29 @@ li .bg__icon:hover{
     justify-content: center;
     gap: 10px;
 }
-.resume__container{
-    width: 480px;
-    height: 160px;
-    background-color: rgb(44, 97, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    border-radius: 9px;
-    padding: 25px;
-    cursor: pointer;
-    transition: all 0.4s linear;
+
+.content h5{
+    color: #47abfd;
 }
 
-.resume__container:hover{
-    background-color:  rgb(15, 115, 255);
-    box-shadow: .5px .5px 5px white;
+/* DATE CONTAINER */
+.date__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.resume__container p{
-    font-size: 20px;
-    font-weight: 700;
+
+.date__container svg{
+    height: 30px;
+    width: 30px;
+    color: #007ee5;
 }
-.resume__container h4{
-    font-size: 20px;
-    font-weight: 700;
-}
-.resume__container h6{
-    font-size: 15px;
-    font-weight: 600;
-    color: gold;
+.date__container span{
+    color: #007ee5;
 }
 /* ----------- SECTION 5 : PORTFOLIO ----------- */
 .portfolio__slider{
+    width: 60%;
     height: 300px;
     display: flex;
     align-items: center;
@@ -769,16 +906,17 @@ li .bg__icon:hover{
 }
 
 .slider__content{
-    gap: 20px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-
+    gap: 20px;
 }
-
+.project__date{
+    color: gold;
+}
 .project__description{
-    color: #007ee5;
+    color: white;
 }
 
 .slider__content svg{
@@ -792,15 +930,17 @@ li .bg__icon:hover{
 
 .portfolio__content{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
-    width:500px;
+    padding: 20px;
     height: 200px;
 }
 
 .portfolio__details{
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     flex-direction: column;
 }
@@ -820,6 +960,37 @@ li .bg__icon:hover{
     background-color: transparent;
 }
 
+.info__container{
+    position: relative;
+}
+
+svg.info-btn{
+    color: gold;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+.description__container{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 15px;
+
+    width: 400px;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px 5px gold;
+    padding: 10px 15px;
+    border-radius: 9px;
+    transition: all 0.3s ease;
+}
+
+.info__container:hover .description__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .slider__circles{
     width: 100%;
     height: 20px;
@@ -1097,6 +1268,10 @@ section.contact_me__container{
         display: none;
     }
 
+    .input-list__container{
+        width: 300px;
+    }
+
 
     .main__section1{
         padding: 0;
@@ -1170,11 +1345,6 @@ section.contact_me__container{
         width: 80%;
     }
 
-
-    .section5{
-        display:none;
-    }
-
     /*------------ SECTION : MAIN  ------------*/
     .section1__about_me h1{
         text-align: center;
@@ -1193,7 +1363,7 @@ section.contact_me__container{
         width: 300px;
     }
 
-    /*------------ SECTION : ABOUT ME  ------------*/
+    /*------------ABOUT ME------------*/
     .about__container{
         display: flex;
         flex-direction: column;
@@ -1217,9 +1387,7 @@ section.contact_me__container{
         gap: 5px;
     }
     .experience__container{
-        width: 90px;
         padding: 5px 10px;
-
     }
     .experience__container:hover{
         background-color: rgb(15, 115, 255);
@@ -1246,14 +1414,20 @@ section.contact_me__container{
     }
 
 
-    /*------------ SECTION : MY SERVICES  ------------*/
-
+    /*------------MY SERVICES------------*/
+    .services__list{
+        width: 100%;
+    }
     .service{
-        width: 300px;
+        padding: 20px 70px;
+        gap: 0;
+    }
+    .service a{
+        padding:0;
     }
     .service svg{
-        height: 45px;
-        width:45px;
+        height: 30px;
+        width:30px;
     }
     .service h1{
         font-size: 15px;
@@ -1262,32 +1436,94 @@ section.contact_me__container{
         font-size: 10px;
     }
 
+    .view-more__container button{
+        width: 50px;
+    }
+    .view-more__container button span{
+        font-size: 10px;
+        font-weight: 600;
+    }
 
-    /*------------ SECTION : MY RESUME  ------------*/
+    .view-more__container button svg{
+        width: 15px;
+        height: 15px;
+    }
+
+
+    /*------------MY RESUME------------*/
 
     .resume__subtitle{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .resume__container{
+    .resume-main__container{
         width: 300px;
-        height: 100px;
+        height: fit-content;
         gap: 0px;
     }
 
-    .resume__container p{
+    .resume-main__container p{
         font-size: 10px;
     }
-    .resume__container h4{
+    .resume-main__container h4{
         font-size: 12px;
     }
-    .resume__container h6{
+    .resume-main__container h6{
         font-size: 10px;
     }
 
+    /*------------PORTFOLIO------------*/
+    .portfolio__slider{
+        width: 100%;
+        gap: 0;
+    }
+    .slider__content svg.leftIcon,
+    .slider__content svg.rightIcon{
+        height: 30px;
+        width: 30px;
+    }
 
-    /*------------ SECTION : CONTACT ME  ------------*/
+    .portfolio__content img.project__img{
+        height: 100px;
+        width: 100px;
+    }
+    .slider__content button{
+        padding: 5px;
+        height: fit-content;
+        width: fit-content;
+    }
+    .slider__content button span{
+        display: none;
+    }
+
+    .slider__circles{
+        gap: 10px;
+    }
+    .slider__circles .circle{
+        width: 10px;
+        height: 10px;
+    }
+    
+    .slider__circles .circle__active{
+        width:25px;
+        height: 15px;
+    }
+
+    .slider__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .portfolio__content{
+        width: 70%;
+    }
+
+    .portfolio__details{
+        height: 100px;
+    }
+
+    /*------------CONTACT ME------------*/
 
     /*------ FORM -------*/
     form{
@@ -1370,7 +1606,6 @@ section.contact_me__container{
     }
 
     /* TAKE ME UP */
-
     .icon__TakeMeup{
         display: none;
         position: fixed;
@@ -1387,24 +1622,39 @@ section.contact_me__container{
 
 /* ----------- TABLET DEVICES----------- */
 @media only screen and (max-width: 768px ) and (max-width:1023px){
-
     .section__div{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .Saad-Ouardi-img{
-        display: none;
+
+    .section1__my_image{
+        display:none;
     }
 
     .service{
-        width: 180px;
+        padding: 20px 50px;
+        gap: 8px;
+        width: 100px;
+    }
+    .service button{
+        width: 80px;
+        height: 30px;
+    }
+    .service button span{
+        font-size: 8px;
+    }
+    .service button svg{
+        height: 10px;
+        width: 10px;
     }
 }
 
 
 /* ----------- LAPTOP DEVICES----------- */
 @media only screen and (max-width: 1024px ) and (max-width:1439px){
+
+    /* ----MAIN SECTION---- */
     .section1__about_me h1,
     .section1__about_me h3,
     .section1__about_me h5{
@@ -1416,8 +1666,8 @@ section.contact_me__container{
         justify-content: center;
     }
 
-    .Saad-Ouardi-img{
-        display: none;
+    .section1__my_image{
+        display:none;
     }
     .section1__social_media{
         display: flex;
@@ -1425,18 +1675,46 @@ section.contact_me__container{
         justify-content: center;
     }
 
-    .about-image__container{
-        width: 30%;
+
+    /*-----ABOUT SECTION-----*/
+    .about__container{
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: start;
     }
+
     .about-me__img{
-        height: 40%;
-        width: 90%;
+        height: 250px;
+        width: 300px;
+    }
+
+    .bio__container h3,
+    .bio__container h5{
+        text-align: center;
+    }
+
+    /*-----PORTFOLIO SECTION-----*/
+
+    .slider__content img{
+        height: 150px;
+        width: 150px;
+    }
+    .portfolio__details h3{
+        font-size: 15px;
+        
+    }
+    .portfolio__details p{
+        font-size: 12px;
+    }
+    .slider__content button{
+        font-size: 12px;
+    }
+    .slider__content button svg{
+        height: 20px;
+        width: 20px;
     }
 }
 /* ----------- DESCKTOP DEVICES----------- */
 @media only screen and(max-width: 1440px ){
-    
+
 }
