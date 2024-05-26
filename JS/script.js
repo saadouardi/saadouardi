@@ -257,3 +257,36 @@ takemeup_btn.addEventListener('click', () => {
 });
 
 
+$(document).ready(function() {
+
+    $('.resume__list').hide();
+    $('.skills-list__container').hide();
+    window.addEventListener('scroll',()=>{
+        console.log(scrollY);
+        if(scrollY>900){
+            $(document).scroll(function(){
+                $(".skills-list__container").slideDown(1000);
+            });
+        }
+
+        if(scrollY>2281){
+            $(document).scroll(function(){
+                $(".resume__list").slideDown(1000);
+            });
+        }
+    })
+
+});
+
+
+
+let list = ['banana', 'apple', 'orange', 'bano', 'apple', 'orange'];
+let userInput = 'ban';
+
+let filteredSearch = list.filter( item =>{
+    return item.includes(userInput);
+})
+
+console.log(`Results : ${filteredSearch}`);
+
+
