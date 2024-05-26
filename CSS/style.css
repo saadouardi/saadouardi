@@ -164,8 +164,6 @@ section{
     gap: 20px;
 }
 
-
-
 h1,h2,h3,h4,h5,h6,p{
     color: white;
 }
@@ -229,9 +227,15 @@ h1,h2,h3,h4,h5,h6,p{
 
 
 /* ----------------------------- HEADER ------------------------------------ */
-
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* HEADER ROW 1 DIV */
 .header__row1{
+    width: 1440px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -534,10 +538,10 @@ li .bg__icon:hover{
     flex-direction: column;
 }
 .about-image__container{
-    width: 40%;
+    width: 50%;
 }
 .about-text__container{
-    width: 60%;
+    width: 50%;
 }
 
 .about-me__img{
