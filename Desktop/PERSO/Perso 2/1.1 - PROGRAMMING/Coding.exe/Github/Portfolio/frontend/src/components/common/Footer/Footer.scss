@@ -1,0 +1,14 @@
+footer{
+    background-color: rgb(0, 12, 67);
+    color: var(--footer-color-LightMode);
+    width: 100%;
+    height:fit-content;
+    padding: 20px 0;
+}
+
+.copyright__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}

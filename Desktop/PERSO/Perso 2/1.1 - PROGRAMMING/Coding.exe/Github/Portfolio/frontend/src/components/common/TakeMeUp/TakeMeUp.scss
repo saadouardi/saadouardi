@@ -1,0 +1,14 @@
+.icon__TakeMeup{
+    color: white;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    animation: bounce 3s infinite;
+}
+.icon__TakeMeup:hover{
+    height: 50px;
+    width: 50px;
+    animation: bounceBtn 2s linear;
+}
