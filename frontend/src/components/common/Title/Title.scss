@@ -1,0 +1,44 @@
+.Title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: red !important;
+
+    h1{
+        font-size: 100px;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+    }
+    span{
+        color:#007ee5;
+    }
+
+    h6{
+        font-size: 40px;
+        font-family: "PT Sans Narrow", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+}
+
+
+/*---------------------- MOBILE VERSION----------------------*/
+@media screen and (max-width: 768px){
+    .Title{
+        h2{
+            font-size: 25px;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        h3{
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+}

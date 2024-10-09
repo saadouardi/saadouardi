@@ -1,0 +1,128 @@
+.About{
+    .sides{
+        height: 450px;
+        .left-side{
+            width: 35%;
+            height: 100%;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .right-side{
+            width: 50%;
+            height: 100%;
+            h3{
+                font-size: 22px;
+                text-align: center;
+            }
+    
+            h5{
+                text-align: start;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+
+
+.Experiences{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 20px 0;
+
+    .Experience{
+        padding: 5px 15px;
+        border-radius: 4px;
+        transition: all .3s linear;
+        cursor: pointer;
+    }
+    // .Experience:hover{
+    //     background-color: rgb(15, 115, 255);
+    // }
+}
+
+.about-text__container,
+.about-image__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/*---------------------- MOBILE VERSION----------------------*/
+@media screen and (max-width: 768px){
+    .about__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main__section2 img{
+        height: 100px;
+        width: 100px;
+    }
+    .section__title_div{
+        h3{
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+
+
+    .bio__container{
+        width: 300px;
+        h5{
+            text-align: center;
+            font-size: 12px;
+        }
+    }
+
+
+    .Experiences{
+        width: 300px;
+        gap: 5px;
+        
+        .Experience{
+            padding: 5px;
+            h3{
+                text-align: center;
+                font-size: 16px;
+            }
+    
+            h6{
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+        .Experience:hover{
+            background-color: rgb(15, 115, 255);
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px ) and (max-width:1439px){
+
+    .about__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me__img{
+        height: 250px;
+        width: 300px;
+    }
+
+    .bio__container{
+        h3,h5{
+            text-align: center;
+        }
+    }
+}

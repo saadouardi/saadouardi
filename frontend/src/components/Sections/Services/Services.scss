@@ -1,0 +1,121 @@
+.services__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .Service{
+        height: fit-content;
+        width: 200px;
+        padding: 70px 5px 10px 5px;
+        border-radius: 9px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        transition: all .3s linear;
+    
+        svg{
+            width: 60px;
+            height: 60px;
+            color:white;
+        }
+    
+        h1{
+            text-align: center;
+            font-size: 30px;
+        }
+    
+        .view-more__container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+    
+            button{
+                animation: none;
+                transition: all .4s ease;
+    
+                span{
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+    
+                svg{    
+                    width: 20px;
+                    height: 20px;
+                }
+    
+            }
+    
+        }
+    }
+
+    .Service:hover{
+        cursor: pointer;
+        transform: translateY(-0.5rem);
+    }
+    
+}
+
+
+
+/* -----------MOBILE DEVICES----------- */
+@media screen and (max-width: 768px){
+    .services__list{
+        width: 100%;
+    }
+    .Service{
+        padding: 10px;
+        gap: 0;
+        svg{
+            height: 30px;
+            width:30px;
+        }
+
+        h1{
+            font-size: 15px;
+        }
+        h4{
+            font-size: 10px;
+        }
+
+        .view-more__container{
+            button{
+                width: 50px;
+
+                span{
+                    font-size: 10px;
+                    font-weight: 600;
+                }
+                svg{
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+}
+
+/* ----------- TABLET DEVICES----------- */
+@media only screen and (max-width: 768px ) and (max-width:1023px){
+
+    .Service{
+        padding: 20px 50px;
+        gap: 8px;
+        width: 100px;
+
+        button{
+            width: 80px;
+            height: 30px;
+            span{
+                font-size: 8px;
+            }
+            svg{
+                height: 10px;
+                width: 10px;
+            }
+        }
+    }
+}

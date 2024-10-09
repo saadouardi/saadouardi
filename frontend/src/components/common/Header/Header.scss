@@ -1,0 +1,102 @@
+.header__row1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2px 10px;
+    .Website{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        span.website__name{
+            font-size: 35px;
+            cursor: pointer;
+            transition: all 0.3s linear;
+        }
+        span.website__name:hover{
+            color: rgb(0, 0, 0);
+        }
+    }
+
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        a{
+            text-decoration: none;
+        }        
+        a:hover{
+            color: gold;
+        }
+        button{
+            border-radius: 100px !important;
+            width: fit-content;
+            height: fit-content;
+            padding: 10px;
+            animation: none;
+            svg{
+                color: white !important;
+            }
+        }
+    }
+
+    .mobile__navbar{
+        display: none;
+        position: relative;    
+        .navbar{
+            width: 95vw;
+            background-color: black;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            border-radius: 9px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px;
+    
+            .mobile-list_navbar{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                a{
+                    width: 90%;
+                    height: 50px;
+                    color: white;
+                    background-color: rgb(255, 64, 64);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                }
+                a:hover{
+                    background-color: rgb(255, 75, 75);
+                }
+            }
+        }
+    }
+}
+
+/*---------------------- MOBILE VERSION----------------------*/
+@media screen and (max-width: 768px){
+    .header__row1{
+        .mobile__navbar{
+            display: block;
+        }
+    }
+    
+    .header__row1{
+        .navbar{
+            display: none;
+        }
+    }
+}

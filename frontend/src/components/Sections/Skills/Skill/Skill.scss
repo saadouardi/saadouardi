@@ -1,0 +1,50 @@
+.main-skill__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 5px;
+
+    .skill__img{
+        img{
+            height: 50px;
+            width: 50px;
+        }
+    }
+
+    .main-skill___container{
+        width: 100%;
+        .skill__container{
+            display: flex;
+            justify-content: space-between;
+            h3{
+                font-size: 20px;
+            }
+        }
+    }
+
+    .skill-progression-bar__container{
+
+        .progression-bar__container{
+            height: 12px;
+            border: 2px solid var(--secondary-color-LM);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            padding: 10px 4px;
+
+            .progression-bar__value{
+                background: var(--secondary-color-LM);
+                border-radius: 4px;
+                width: 90%;
+                height: 10px;
+            }
+        }
+    }
+}
+
+
+
+
