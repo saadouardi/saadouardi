@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/saadouardi/static/css/main.e91a78fd.css",
+    "main.js": "/saadouardi/static/js/main.c9985370.js",
+    "static/js/453.dc393c8f.chunk.js": "/saadouardi/static/js/453.dc393c8f.chunk.js",
+    "static/media/default-image.jpg": "/saadouardi/static/media/default-image.ef13c5753ec3f10d794f.jpg",
+    "static/media/python.png": "/saadouardi/static/media/python.6a5cbc319ab3ddf8ef92.png",
+    "static/media/github.png": "/saadouardi/static/media/github.c2c1684c95ee51ed6e44.png",
+    "static/media/git.png": "/saadouardi/static/media/git.985a7327fc7347ebdba0.png",
+    "static/media/nodejs.png": "/saadouardi/static/media/nodejs.007e99f68b718e476aba.png",
+    "static/media/Arabic.png": "/saadouardi/static/media/Arabic.e4b337479875cce5795e.png",
+    "static/media/react.png": "/saadouardi/static/media/react.3bf6fb4b18b1f904676d.png",
+    "static/media/restaurant-logo.png": "/saadouardi/static/media/restaurant-logo.23e5da7ec98946412a4f.png",
+    "static/media/todolist.png": "/saadouardi/static/media/todolist.fcca87b1e90b5fe2399a.png",
+    "static/media/mysql.png": "/saadouardi/static/media/mysql.9b321b61f1d106598f17.png",
+    "static/media/dashboard-logo.png": "/saadouardi/static/media/dashboard-logo.87c36bcd4f4f546e7836.png",
+    "static/media/form-logo.png": "/saadouardi/static/media/form-logo.1cf5281ae2442d39d97d.png",
+    "static/media/css.png": "/saadouardi/static/media/css.463e319bad8e0edf1ef7.png",
+    "static/media/netone.jpeg": "/saadouardi/static/media/netone.92ddb56b8f8bf04d8636.jpeg",
+    "static/media/js.png": "/saadouardi/static/media/js.3dfb665e058d08c99f28.png",
+    "static/media/freelance.jpg": "/saadouardi/static/media/freelance.8a31f6d8f39e44aef756.jpg",
+    "static/media/morocco.svg": "/saadouardi/static/media/morocco.97605469af452a2136581fc627b6f3d9.svg",
+    "index.html": "/saadouardi/index.html",
+    "main.e91a78fd.css.map": "/saadouardi/static/css/main.e91a78fd.css.map",
+    "main.c9985370.js.map": "/saadouardi/static/js/main.c9985370.js.map",
+    "453.dc393c8f.chunk.js.map": "/saadouardi/static/js/453.dc393c8f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e91a78fd.css",
+    "static/js/main.c9985370.js"
+  ]
+}
