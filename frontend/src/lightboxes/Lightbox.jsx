@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './Lightbox.scss';
 
-export const Lightbox = ({Title}) => {
+export const Lightbox = ({Title, Description}) => {
     const [close, setClose] = useState(true);
     const handleClose = () =>{
-        setClose(!close);
+        setClose(false);
     }
     return (
         <>
@@ -22,15 +22,12 @@ export const Lightbox = ({Title}) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className='Body Flex-Center'>
+                            <div className='Body'>
                                 <div className='Body-Content'>
-                                    <div className='List Flex-Center'>
-                                        <LightboxContent Content='Use ReactJS to develop UI interfaces.'/>
-                                        <LightboxContent Content='Use ReactJS to develop UI interfaces.'/>
-                                        <LightboxContent Content='Use ReactJS to develop UI interfaces.'/>
-                                        <LightboxContent Content='Use ReactJS to develop UI interfaces.'/>
-                                        <LightboxContent Content='Use ReactJS to develop UI interfaces.'/>
-                                        <LightboxContent Content='Use ReactJS to develop UI interfaces.'/>
+                                    <div className='List flex-start-center flex-column'>
+                                        {Description.map((description, index) => (
+                                            <LightboxContent key={index} Content={description}/>
+                                        ))}
                                     </div>
                                 </div>
                             </div>

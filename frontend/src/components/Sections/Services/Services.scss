@@ -4,7 +4,6 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
-
     .Service{
         height: fit-content;
         width: 200px;
@@ -15,40 +14,26 @@
         align-items: center;
         gap: 10px;
         transition: all .3s linear;
-    
         svg{
             width: 60px;
             height: 60px;
             color:white;
         }
-    
         h1{
             text-align: center;
             font-size: 30px;
         }
-    
-        .view-more__container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-    
-            button{
-                animation: none;
-                transition: all .4s ease;
-    
-                span{
-                    font-size: 16px;
-                    font-weight: 500;
-                }
-    
-                svg{    
-                    width: 20px;
-                    height: 20px;
-                }
-    
+        button{
+            animation: none;
+            transition: all .4s ease;
+            span{
+                font-size: 16px;
+                font-weight: 500;
             }
-    
+            svg{    
+                width: 20px;
+                height: 20px;
+            }
         }
     }
 

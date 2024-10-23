@@ -2,8 +2,8 @@ import { useState ,useEffect } from 'react';
 import './Header.scss';
 
 export const Header = () => {
-    const [BrightMode,setBrightMode] = useState(true);
-    const [MobileMenu,setMobileMenu] = useState(false);
+    const [BrightMode, setBrightMode] = useState(true);
+    const [MobileMenu, setMobileMenu] = useState(false);
 
     const handleToogleMode = () =>{
         setBrightMode(!BrightMode);
@@ -34,7 +34,7 @@ export const Header = () => {
             })
         }
     },[BrightMode]);
-    window.addEventListener('scroll',()=>{
+    window.addEventListener('scroll', () => {
         if(!BrightMode){
             if(window.scrollY > 0){
                 document.querySelector('header').style.backgroundColor = '#31363F';
@@ -63,17 +63,13 @@ export const Header = () => {
     const handleTakeMeUp = () =>{
         window.scrollTo(0, 0);
     }
-
     return(
         <>
             <header id='main'>
                 <div class="header header__row1">
-                    {/* <!-- MY NAME --> */}
                     <div className="Website">
                         <span class="website__name">Saad Ouardi</span>
                     </div>
-    
-                    {/* <!-- NAV BAR --> */}
                     <div class="navbar">
                         <a href="#main" onClick={handleTakeMeUp}>HOME</a>
                         <a href="#about">ABOUT</a>

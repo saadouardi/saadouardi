@@ -44,6 +44,10 @@
     padding: 0;
     margin: 0;
 }
+*::selection{
+    background-color: var(--secondary-color-LM);
+    color: white;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -91,8 +95,8 @@ button{
     align-items: center;
     justify-content: center;
     gap: 5px;
-    a,svg{
-        color: white;
+    a, svg, span{
+        color: white !important;
     }
 }
 button:hover{
@@ -118,12 +122,6 @@ svg{
     width: 20px;
     cursor: pointer;
 }
-svg:hover{
-    color: gold;
-}
-svg.Close{
-    background-color: red;
-}
 /*---------SECTIONS---------*/
 header{
     background-color: transparent;
@@ -146,7 +144,7 @@ footer{
     color: var(--primary-color-LM);
     padding: 20px 0;
 }
-header,main,footer{
+header, main, footer{
     height: fit-content;
     width: 100%;
 }
@@ -160,6 +158,27 @@ section{
     gap: 20px;
 }
 /*-----------Flex------------------*/
+.flex-center-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.flex-start-center{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 8px;
+}
+.flex-center-start{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+}
+.flex-column{
+    flex-direction: column;
+}
 .Flex-Center{
     display: flex;
     flex-wrap: wrap;
