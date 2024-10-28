@@ -137,6 +137,8 @@ main{
     background: var(backgroundColor-LM);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: start;
     padding-top: 70px;
     gap: 10px;
 }
@@ -149,7 +151,7 @@ header, main, footer{
     width: 100%;
 }
 section{
-    width: 100%;
+    width: 1400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -279,6 +281,9 @@ section{
 }
 /*-----------MOBILE DEVICE-----------*/
 @media screen and (max-width: 768px){
+    section{
+        width: 100%;
+    }
     /* NAVBAR */
     .mobile__navbar{
         display: block;
@@ -345,6 +350,9 @@ section{
 }
 /*-----------TABLET DEVICE----------- */
 @media only screen and (max-width: 768px ) and (max-width:1023px){
+    section{
+        width: 100%;
+    }
     .section__div{
         display: flex;
         align-items: center;
@@ -353,6 +361,9 @@ section{
 }
 /*-----------LAPTOP DEVICE----------- */
 @media only screen and (max-width: 1024px ) and (max-width:1439px){
+    section{
+        width: 100%;
+    }
     /* ----MAIN SECTION---- */
     .section1__about_me h1,
     .section1__about_me h3,
@@ -362,4 +373,7 @@ section{
 }
 /*-----------DESCKTOP DEVICE----------- */
 @media only screen and(max-width: 1440px ){
+    section{
+        width: 100%;
+    }
 }

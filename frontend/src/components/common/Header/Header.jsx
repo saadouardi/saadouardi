@@ -68,7 +68,7 @@ export const Header = () => {
             <header id='main'>
                 <div class="header header__row1">
                     <div className="Website">
-                        <span class="website__name">Saad Ouardi</span>
+                        <span class="website__name" href="#main" onClick={handleTakeMeUp}>Saad Ouardi</span>
                     </div>
                     <div class="navbar">
                         <a href="#main" onClick={handleTakeMeUp}>HOME</a>
