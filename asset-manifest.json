@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/saadouardi/static/css/main.e8933760.css",
-    "main.js": "/saadouardi/static/js/main.7b77c884.js",
+    "main.css": "/saadouardi/static/css/main.226d7b6c.css",
+    "main.js": "/saadouardi/static/js/main.7f066ee9.js",
     "static/js/453.dc393c8f.chunk.js": "/saadouardi/static/js/453.dc393c8f.chunk.js",
-    "static/media/default-image.jpg": "/saadouardi/static/media/default-image.ef13c5753ec3f10d794f.jpg",
+    "static/media/profile.png": "/saadouardi/static/media/profile.b6d3f5eb24946333824e.png",
     "static/media/python.png": "/saadouardi/static/media/python.6a5cbc319ab3ddf8ef92.png",
     "static/media/github.png": "/saadouardi/static/media/github.c2c1684c95ee51ed6e44.png",
     "static/media/git.png": "/saadouardi/static/media/git.985a7327fc7347ebdba0.png",
@@ -21,12 +21,12 @@
     "static/media/freelance.jpg": "/saadouardi/static/media/freelance.8a31f6d8f39e44aef756.jpg",
     "static/media/morocco.svg": "/saadouardi/static/media/morocco.97605469af452a2136581fc627b6f3d9.svg",
     "index.html": "/saadouardi/index.html",
-    "main.e8933760.css.map": "/saadouardi/static/css/main.e8933760.css.map",
-    "main.7b77c884.js.map": "/saadouardi/static/js/main.7b77c884.js.map",
+    "main.226d7b6c.css.map": "/saadouardi/static/css/main.226d7b6c.css.map",
+    "main.7f066ee9.js.map": "/saadouardi/static/js/main.7f066ee9.js.map",
     "453.dc393c8f.chunk.js.map": "/saadouardi/static/js/453.dc393c8f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8933760.css",
-    "static/js/main.7b77c884.js"
+    "static/css/main.226d7b6c.css",
+    "static/js/main.7f066ee9.js"
   ]
 }
