@@ -7,7 +7,6 @@ export const ContactContainer = ({Action,Icon,Text}) =>{
                 <div class="icon__container">
                     <Icon/>
                 </div>
-
                 <div class="contact__details">
                     <h5>{Text}</h5>
                 </div>

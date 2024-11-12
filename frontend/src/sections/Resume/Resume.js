@@ -55,14 +55,14 @@ export const ResumeSection = ()=>{
                         <Resume 
                             Flag={MasterIsolation} Program='MASTER ISOLATION' 
                             Degree='WEB DEVELOPER' 
-                            DegreeDetails='My experience at Master Isolation as a web developer provided me with hands-on experience collaborating within a team to develop an ecommerce website, honing my skills in coding, problem-solving, and project management in a real-world setting.' 
+                            DegreeDetails='My experience at Master Isolation as a web developer provided me with hands-on experience collaborating within a team to develop an ecommerce website, honing my skills in coding, and project management in a real-world setting.' 
                             DegreeFrom='Casablanca, Morocco' 
                             Date='2021-2024'/>
 
                         <Resume 
                             Flag={Netone} Program='NETONE' 
                             Degree='FRONTEND DEVELOPER' 
-                            DegreeDetails='During my tenure at NetOne as a frontend developer, I contributed to the development of various projects, sharpening my expertise in crafting user-friendly interfaces and enhancing my proficiency in frontend technologies, which further fueled my passion' 
+                            DegreeDetails='During my tenure at NetOne as a frontend developer, I contributed to the development of various projects, sharpening my expertise in crafting user-friendly interfaces and enhancing my proficiency in frontend' 
                             DegreeFrom='Casablanca, Morocco' 
                             Date='2022-2023'/>
 

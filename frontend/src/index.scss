@@ -1,91 +1,140 @@
-/* Bebas Neue */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-/* Work Sans */
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-/* PT Sans Narrow */
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
-// Lato //
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    /* --------- LIGHT MODE --------- */
-        /*---BACKGROUND COLOR---*/
-        --backgroundColor-LM : rgb(233, 233, 233);
-        --primary-backgroundColor:white;
-        --secondary-backgroundColor-LM : linear-gradient(194deg, rgba(255,0,0,1) 0%, rgba(255,102,102,1) 100%);
-        // Colors //
-        --primary-color-LM:black;
-        --secondary-color-LM: rgb(253, 78, 78);
-        --color-LM:white;
-    /* --------- DARK MODE --------- */
-        /*---BACKGROUND COLOR---*/
-        --primary-backgroundColor-DM : linear-gradient(194deg, rgba(40,40,40,1) 0%, rgba(50,51,54,1) 100%);
-        --secondary-backgroundColor-DM : linear-gradient(194deg, rgba(40,40,40,1) 0%, rgba(50,51,54,1) 100%);
-        /* ---COLOR--- */
-        --primary-color-DM : white;
-        --secondary-color-DM : rgb(253, 78, 78);
-    /* --------- FONT --------- */
-        /* FONT-FAMILY */
-        --title-font-family : "Bebas Neue", sans-serif;
-        --text-font-family : "Lato", sans-serif;
-        --paragraph-font-family : "Work Sans", sans-serif;
+        /* Light Mode Colors */
+        --main-color: #fd4e4e;
+        --primary-bg: #FFFFFF;
+        --secondary-bg: #e9e9e9;
+        --primary-text-color: #000000; // #333333
+        --secondary-text-color: #fd4e4e;
+        --text-light: #555555;
+        --link-bg:  #fd4e4e;
+        --link-color:  #000000;
+        --link-hover: #ff6d6d;
+        --link-active: #fd4e4e;
+        --button-bg: linear-gradient(194deg, rgba(255,0,0,1) 0%, rgba(255,102,102,1) 100%);
+        --button-hover: #f83434;
+        --button-content: #FFFFFF;
+        --button-content-hover: #FFFFFF;
+        --button-secondary-bg: linear-gradient(194deg, rgb(0, 0, 0) 0%, rgb(54, 54, 54) 100%);
+        --button-secondary-hover: #f83434;
+        --button-secondary-content: #FFFFFF;
+        --button-secondary-content-hover: #FFFFFF;
+        --input-bg: transparent;
+        --input-border: #fd4e4e;
+        --input-text: #000000;
+        --input-placeholder: #fd4e4e;
+        --icon-color: #f83434;
+        --icon-primary-color: #FFFFFF;
+        --icon-secondary-color: #000000;
+        --hover-effect: rgba(0, 0, 0, 0.1);
+        --select-color: #FFFFFF;
+        --select-bg: #fd4e4e;
 
-        /* FONT-SIZE */
-        --title-font-size : 50px;
-        --text-font-size : 25px;
-        --paragraph-font-size : 15px;
+        /* Dark Mode Colors */
+        --dark-primary-bg: #222831;
+        --dark-secondary-bg: #31363F;
+        --dark-text-color: #E4E6EB;
+        --dark-secondary-text-color: #fd4e4e;
+        --dark-text-light: #B0B3B8;
+        --dark-link-color: #FFFFFF;
+        --dark-link-hover: #ff6d6d;
+        --dark-button-bg: linear-gradient(194deg, rgba(255,0,0,1) 0%, rgba(255,102,102,1) 100%);
+        --dark-button-hover: #ff6d6d;
+        --dark-button-content: #FFFFFF;
+        --dark-button-content-hover: #FFFFFF;
+        --dark-input-bg: transparent;
+        --dark-input-border: #fd4e4e;
+        --dark-input-text: #FFFFFF;
+        --dark-input-placeholder: #fd4e4e;
+        --dark-primary-icon-color: #E4E6EB;
+        --dark-secondary-icon-color: #E4E6EB;
+        --dark-hover-effect: rgb(87, 87, 87); /* General hover effect */
+        --dark--select-color: #FFFFFF;
+        --dark--select-bg: #fd4e4e;
 
-        /* FONT-WEIGHT */
-        --title-font-weight : 800;
-        --text-font-weight : 600;
-        --paragraph-font-weight : 400;
+        /* Fonts */
+        --primary-font-family: "Poppins", sans-serif;
+        --secondary-font-family: "Montserrat", sans-serif;
 }
-*{
+
+* {
     padding: 0;
     margin: 0;
+    font-family: "Poppins", sans-serif;
 }
-*::selection{
-    background-color: var(--secondary-color-LM);
-    color: white;
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
-html{
+
+*::selection {
+    background-color: var(--select-bg);
+    color: var(--select-color);
+}
+
+html {
     scroll-behavior: smooth;
 }
-/* --------- INITIALISATION --------- */
-h1,h2,h3,h4,h5,h6,p,a,svg,input{
-    color: var(--primary-color-LM);
-}
-input::placeholder,
-textarea::placeholder{
-    color: var(--secondary-color-LM) !important;
-}
-a{
-    font-size: 15px;
-    font-weight: 600;
-}
-span{
-    color: var(--secondary-color-LM) !important;
-}
-div.Close-Btn{
-    background-color: red;
-    height: 40px;
-    width: 40px;
+
+// body{
+//     background-color: var(--secondary-bg);
+// }
+
+section {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
-    cursor: pointer;
-    svg{
-        color: white !important;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    .section-content{
+        width: 1440px;
+        position: relative;
     }
 }
-div.Close-Btn:hover{
-    background-color: rgb(255, 76, 76);
+
+section.main-section{
+    background-color: #f4f3f3;
 }
-/*---------BUTTON---------*/
-button{
-    background: var(--secondary-backgroundColor-LM);
-    color: white;
+
+section.secondary-section{
+    background-color: #f4f3f3 !important;
+}
+
+footer {
+    color: var(--primary-bg);
+    padding: 20px 0;
+}
+
+main, footer {
+    height: fit-content;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, svg, input {
+    color: var(--primary-text-color);
+}
+
+span {
+    color: var(--secondary-text-color) !important;
+}
+
+input, select, textarea {
+    background-color: var(--input-bg);
+    border: 2px solid var(--input-border);
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--input-placeholder) !important;
+}
+
+button {
+    background: var(--button-bg);
+    color: var(--button-content);
     width: fit-content;
     height: 50px;
     border: none;
@@ -95,69 +144,77 @@ button{
     align-items: center;
     justify-content: center;
     gap: 5px;
-    a, svg, span{
-        color: white !important;
+    a, p, svg, span{
+        color: var(--button-content) !important;
     }
 }
-button:hover{
-    animation: bounceBtn 2s linear;
-    transition: all 0.3s linear;
+
+button:hover {
+    background: var(--button-hover);
+    a, p, svg, span{
+        color: var(--button-content-hover) !important;
+    }
 }
-/*---------LINK---------*/
-a{
-    color:var(--primary-color-LM);
+
+a {
+    color:var(--link-color);
     text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
 }
-a:hover{
-    color: gold;
+a:hover {
+    color: var(--link-hover);
 }
-/*---------IMG---------*/
-img{
+
+a.active{
+    color: var(--link-active) !important;
+    font-weight: 600 !important;
+}
+
+img {
     width: 200px;
     height: 200px;
 }
-/*---------ICONS---------*/
-svg{
+
+svg {
     height: 20px;
     width: 20px;
     cursor: pointer;
 }
-/*---------SECTIONS---------*/
-header{
-    background-color: transparent;
-    position:fixed;
-    top:0;
-    z-index: 1000;
+
+// Reusable classes //
+.Primary-Padding{
+    padding: 10px 0;
 }
-body{
-    background-color: var(--body-backgroundColor-LightMode);
-    color: var(--body-color-LightMode);
-}
-main{
-    background: var(backgroundColor-LM);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-    padding-top: 70px;
-    gap: 10px;
-}
-footer{
+
+.primary-section{
+    //background: var(--secondary-backgroundColor-LM);
     color: var(--primary-color-LM);
-    padding: 20px 0;
 }
-header, main, footer{
-    height: fit-content;
-    width: 100%;
+
+.secondary-section{
+    //background: var(--secondary-backgroundColor-LM);
+    color: var(--primary-color-LM);
 }
-section{
-    width: 1400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
-    gap: 20px;
+
+.secondary-section:hover{
+    //background: var(--secondary-backgroundColor-LM);
+    color: var(--primary-color-LM);
+}
+
+.Title{
+    font-family: var(--title-font-family);
+    color: var(--secondary-color-LM);
+    span{
+        color: var(--text-color-LM);
+    }
+}
+
+.Description{
+    font-family: var(--text-font-family);
+    p{
+        font-size: 15px;
+    }
 }
 /*-----------Flex------------------*/
 .flex-center-center{
@@ -191,31 +248,7 @@ section{
 .Flex-Column{
     flex-direction: column;
 }
-/*-----------Padding------------------*/
-.Primary-Padding{
-    padding: 10px 0;
-}
-.Secondary-BG{
-    // background: var(--secondary-backgroundColor-LM);
-    background: var(--primary-backgroundColor);
-    color: var(--primary-color-LM);
-}
-.Secondary-BG:hover{
-    box-shadow: 1px 1px 10px var(--text-color-LM);
-}
-.Title{
-    font-family: var(--title-font-family);
-    color: var(--secondary-color-LM);
-    span{
-        color: var(--text-color-LM);
-    }
-}
-.Description{
-    font-family: var(--text-font-family);
-    p{
-        font-size: 15px;
-    }
-}
+
 /*----------------------ANIMATIONS----------------------*/
 @keyframes bounce {
     0%{
@@ -282,7 +315,9 @@ section{
 /*-----------MOBILE DEVICE-----------*/
 @media screen and (max-width: 768px){
     section{
-        width: 100%;
+        .section-content{
+            width: 100%;
+        }
     }
     /* NAVBAR */
     .mobile__navbar{
@@ -351,7 +386,9 @@ section{
 /*-----------TABLET DEVICE----------- */
 @media only screen and (max-width: 768px ) and (max-width:1023px){
     section{
-        width: 100%;
+        .section-content{
+            width: 100%;
+        }
     }
     .section__div{
         display: flex;
@@ -362,7 +399,9 @@ section{
 /*-----------LAPTOP DEVICE----------- */
 @media only screen and (max-width: 1024px ) and (max-width:1439px){
     section{
-        width: 100%;
+        .section-content{
+            width: 100%;
+        }
     }
     /* ----MAIN SECTION---- */
     .section1__about_me h1,
@@ -372,8 +411,10 @@ section{
     }
 }
 /*-----------DESCKTOP DEVICE----------- */
-@media only screen and(max-width: 1440px ){
+@media only screen and (max-width: 1440px ){
     section{
-        width: 100%;
+        .section-content{
+            width: 100%;
+        }
     }
 }

@@ -1,55 +1,39 @@
-.About{
-    .sides{
-        height: 450px;
-        .left-side{
-            width: 35%;
-            height: 100%;
-            img{
-                height: 100%;
-                width: 100%;
+section.about{
+    padding: 0;
+    .about-section{
+        .experiences{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 20px 0;
+        
+            .experience{
+                background-color: var(--main-color);
+                padding: 5px 15px;
+                border-radius: 4px;
+                transition: all .3s linear;
+                cursor: pointer;
+                h3, h6{
+                    color: white !important;
+                }
             }
         }
-        .right-side{
-            width: 50%;
-            height: 100%;
-            h3{
-                font-size: 22px;
-                text-align: center;
-            }
-    
-            h5{
-                text-align: start;
-                font-size: 18px;
+        .image-container{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            img {
+                height: 500px;
+                width: 500px;
             }
         }
     }
 }
-.Experiences{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    padding: 20px 0;
 
-    .Experience{
-        padding: 5px 15px;
-        border-radius: 4px;
-        transition: all .3s linear;
-        cursor: pointer;
-    }
-    // .Experience:hover{
-    //     background-color: rgb(15, 115, 255);
-    // }
-}
-.about-text__container,
-.about-image__container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
+
 /*---------------------- MOBILE VERSION----------------------*/
 @media screen and (max-width: 768px){
     .about__container{
@@ -79,7 +63,7 @@
     }
 
 
-    .Experiences{
+    .experiences{
         width: 300px;
         gap: 5px;
         

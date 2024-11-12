@@ -12,8 +12,8 @@ import { TakeMeUp } from '../src/components/common/TakeMeUp/TakeMeUp';
 const App = () => {
   return (
     <>
+      <Header/>
       <main>
-        <Header/>
         <Main/>
         <About/>
         <SkillSection/>

@@ -1,0 +1,17 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    button{
+        border-radius: 100px !important;
+        width: fit-content;
+        height: fit-content;
+        padding: 10px;
+        animation: none;
+        svg{
+            color: white !important;
+        }
+    }
+}

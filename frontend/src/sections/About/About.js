@@ -1,50 +1,40 @@
-import Profile from '../../assets/images/Profile/default-image.jpg';
+import Profile from '../../assets/images/Profile/profile.png';
 import './About.scss';
 
 export const About = () => {
     return(
         <>
-            <section id='about'>
-                <div class="About section__title_div">
-                        <div className='Title'>
-                            <h1 class="section__title">About <span class="span__title">Me</span></h1>
+            <section className='about' id='about'>
+                <div className="about-section section__title_div section-content">
+                    <div className='Title'>
+                        <h1 class="section__title">About <span class="span__title">Me</span></h1>
+                    </div>
+                    <h5>
+                        Dedicated and innovative computer science student from Minnesota State University, blending creativity and
+                        technical proficiency in web development. With over three years of experience across three companies, I
+                        have honed expertise in frontend and backend development. I have successfully led projects and integrated
+                        advanced features such as online payments and admin dashboards.
+                        Proficient in React.js for frontend development, Express.js for backend, MySQL for database management, and
+                        Git and GitHub for efficient code management. Eager to leverage my skills in a dynamic IT role, committed to continuous learning, and contributing
+                        effectively to team success.
+                    </h5>
+                    <div class="experiences">
+                        <div class="experience">
+                            <h3>03+</h3>
+                            <h6>Years experience</h6>
                         </div>
-                        
-                        <div class="sides Flex-Center">
-                            <div class="left-side Flex-Center">
-                                <img src={Profile} alt=""/>
-                            </div>
-
-                            <div class="right-side about-text__container">
-                                <div class="Description bio__container">
-                                    <h3>Passionate Frontend Developer & Innovative Computer Science Student</h3>
-                                    <h5>
-                                        👨‍💻 Proactive computer science student with a knack for creativity and innovation, currently pursuing studies at Minnesota State University.<br/><br/>
-                                        🎓 Completed one year of intensive coursework in computer science, gaining valuable insights into frontend development and laying a strong foundation for future endeavors.<br/><br/>
-                                        💼 Eager to embark on a career as a computer programmer in the information technology sector, leveraging my academic knowledge and prior experiences to contribute effectively to innovative projects.<br/><br/>
-                                        🚀 Committed to continuous learning and growth, I am excited to apply my skills and enthusiasm to drive impactful solutions in a dynamic professional environment.<br/><br/>
-                                        🚀 Committed to continuous learning and growth, I am excited to apply my skills and enthusiasm to drive impactful solutions in a dynamic professional environment.<br/><br/>
-                                    </h5>
-                                </div>
-                            </div>
+                        <div class="experience">
+                            <h3>20+</h3>
+                            <h6>Completed project</h6>
                         </div>
-
-                        <h3>Let's connect and explore opportunities to collaborate and innovate!</h3>
-
-                        <div class="Experiences">
-                            <div class="Experience Secondary-BG">
-                                <h3>03+</h3>
-                                <h6>Years experience</h6>
-                            </div>
-                            <div class="Experience Secondary-BG">
-                                <h3>20+</h3>
-                                <h6>Completed project</h6>
-                            </div>
-                            <div class="Experience Secondary-BG">
-                                <h3>03+</h3>
-                                <h6>Companies worked</h6>
-                            </div>
+                        <div class="experience">
+                            <h3>03+</h3>
+                            <h6>Companies worked</h6>
                         </div>
+                    </div>
+                    {/* <div class="image-container">
+                        <img src={Profile} alt=""/>
+                    </div> */}
                 </div> 
             </section>
         </>

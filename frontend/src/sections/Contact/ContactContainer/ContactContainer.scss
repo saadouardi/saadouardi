@@ -19,7 +19,7 @@
             svg{
                 width: 25px;
                 height: 25px;
-                color: var(--secondary-color-LM) !important;
+                color: var(--main-color) !important;
             }
         }
     
@@ -29,7 +29,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: var(--secondary-color-LM);
+            background: var(--main-color);
             border-radius: 0 0 9px 9px;
             padding-left: 10px;
             h5{
