@@ -1,0 +1,14 @@
+.Logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    span{
+        font-size: 35px;
+        cursor: pointer;
+        transition: all 0.3s linear;
+    }
+    span:hover{
+        color: rgb(0, 0, 0);
+    }
+}
