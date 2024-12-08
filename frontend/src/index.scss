@@ -34,7 +34,7 @@
         --select-bg: #fd4e4e;
 
         /* Dark Mode Colors */
-        --dark-primary-bg: #222831;
+        --dark-primary-bg: #232528;
         --dark-secondary-bg: #31363F;
         --dark-text-color: #E4E6EB;
         --dark-secondary-text-color: #fd4e4e;
@@ -202,7 +202,7 @@ svg {
     color: var(--primary-color-LM);
 }
 
-.Title{
+.title{
     font-family: var(--title-font-family);
     color: var(--secondary-color-LM);
     span{
@@ -210,7 +210,7 @@ svg {
     }
 }
 
-.Description{
+.description{
     font-family: var(--text-font-family);
     p{
         font-size: 15px;

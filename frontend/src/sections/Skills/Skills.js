@@ -49,4 +49,3 @@ export const SkillSection = () =>{
         </section>
     );
 };
-

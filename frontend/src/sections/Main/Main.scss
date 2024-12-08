@@ -1,32 +1,35 @@
-section.main{
+section.main {
     padding-bottom: 0;
     height: 672px;
-    .main-container{
+
+    .main-container {
         position: relative;
         height: 100%;
         display: flex;
         flex-direction: column;
         gap: 8px;
-        .title-description-buttons-container{
+
+        .title-description-buttons-container {
             display: flex;
             flex-direction: column;
             gap: 20px;
-            .title-description-container{
+
+            .title-description-container {
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
             }
         }
 
-        .Title{
-            h1{
+        .main-title {
+            h1 {
                 font-size: 70px;
             }
-            h3{
+            h3 {
                 font-size: 60px;
             }
         }
-        .main-content{
+        .main-content {
             width: 100%;
             display: flex;
             align-items: center;
@@ -34,24 +37,22 @@ section.main{
             flex-direction: row;
             gap:20px;
     
-            .left-side{
+            .buttons-container {
                 display: flex;
-                flex-direction: column;
-                gap: 20px;
-            }
-            .contact-btn__container{
+                align-items: center;
                 justify-content: start;
                 flex-wrap: wrap;
-                .hireme-btn, .downloadcv-btn{
+
+                .hireme-btn, .cv-btn {
                     width: 150px;
                 }
-                .downloadcv-btn{
+                .cv-btn {
                     background: transparent;
                     border: 2px solid var(--main-color);
-                    svg, a{
+                    svg, a {
                         color: var(--main-color) !important;
                     }
-                    svg{
+                    svg {
                         height: 20px;
                         width: 20px;
                     }
@@ -59,7 +60,7 @@ section.main{
             }
         }
 
-        .SocialMedia{
+        .social-media-container {
             display: flex;
             align-items: center;
             justify-content: start;
@@ -67,14 +68,17 @@ section.main{
             position: absolute;
             bottom: 20px;
             left: 0;
-            svg{
+            z-index: 9;
+
+            svg {
                 height: 30px;
                 width: 30px;
                 color: white !important;
             }
-            li{
+
+            li {
                 list-style: none;
-                .bg__icon{
+                .bg__icon {
                     background: var(--main-color) !important;
                     border-radius: 100px;
                     padding: 8px;
@@ -84,11 +88,12 @@ section.main{
         }
     }
 
-    .image-container{
+    .image-container {
         position: absolute;
         right: 0;
         bottom: 0;
-        img{
+
+        img {
             height: 670px;
             width: 750px;
         }
@@ -97,46 +102,198 @@ section.main{
 
 /*---------------------- MOBILE VERSION----------------------*/
 @media screen and (max-width: 768px) {
-    .Image-Container{
-        display:none;
-    }
-    .contact-btn__container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    section.main {
+        height: fit-content !important;
+        padding: 20px 0 !important;
 
-        button{
-            flex-grow: 1;
+        .main-container {
+            .title-description-buttons-container {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .buttons-container {
+                    display: flex;
+                    align-items: center !important;
+                    justify-content: center !important;
+                }
+            }
+    
+            .main-title {
+                h1{
+                    font-size: 35px !important;
+                    text-align: center !important;
+                    padding: 0 !important;
+                }
+                h3{
+                    font-size: 30px !important;
+                    text-align: center;
+                }
+            }
+
+            .description {
+                h5 {
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+            .social-media-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                position: fixed;
+                bottom: 50%;
+                left: 85% !important;
+            }
         }
-    }
-    .SocialMedia{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    
+        .image-container {
+            display: none;
+        }
     }
 }
 /* ----------- TABLET DEVICES----------- */
-@media only screen and (max-width: 768px ) and (max-width:1023px){
-    .Image-Container{
-        display:none;
+@media only screen and (max-width: 768px ) and (max-width:1023px) {
+    section.main {
+        height: fit-content;
+        .main-container {
+
+            .title-description-buttons-container {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .buttons-container {
+                    display: flex;
+                    align-items: center !important;
+                    justify-content: center !important;
+                }
+            }
+    
+            .main-title {
+                h1{
+                    font-size: 35px;
+                    text-align: center;
+                    padding: 0 !important;
+                }
+                h3{
+                    font-size: 30px;
+                    text-align: center;
+                }
+            }
+
+            .description {
+                h5 {
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+    
+            .social-media-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: static;
+            }
+        }
+    
+        .image-container {
+            display: none;
+        }
     }
 }
 /* ----------- LAPTOP DEVICES----------- */
-@media only screen and (max-width: 1024px ) and (max-width:1439px){
-    .Image-Container{
-        display:none;
-    }
-    .contact-btn__container{
-        display: flex;
-        align-items: center;
-        justify-content: center !important;
-    }
-    .section1__social_media{
-        display: flex;
-        align-items: center;
-        justify-content: center !important;
+@media only screen and (max-width: 1024px ) and (max-width:1439px) {
+    section.main {
+        height: fit-content;
+        .main-container {
+
+            .title-description-buttons-container {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .buttons-container {
+                    display: flex;
+                    align-items: center !important;
+                    justify-content: center !important;
+                }
+            }
+    
+            .title {
+                h1{
+                    font-size: 35px;
+                    text-align: center;
+                    padding: 0 !important;
+                }
+                h3{
+                    font-size: 30px;
+                    text-align: center;
+                }
+            }
+
+            .description {
+                h5 {
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+    
+            .social-media-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: static;
+            }
+        }
+    
+        .image-container {
+            display: none;
+        }
     }
 }
 /* ----------- DESCKTOP DEVICES----------- */
-@media only screen and(max-width: 1440px ){
+@media only screen and (max-width: 1440px ){
+    section.main {
+        height: 550px;
+        .main-container {
+            .main-title {
+                h1{
+                    font-size: 65px;
+                }
+
+                h3{
+                    font-size: 60px;
+                }
+            }
+
+            .description {
+                h5 {
+                    font-size: 20px;
+                }
+            }
+
+            .social-media-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                position: fixed;
+                bottom: 50%;
+                left: 92%;
+            }
+        }
+    }
+
+    .image-container {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        img {
+            height: 580px !important;
+            width: 580px !important;
+        }
+    }
 }

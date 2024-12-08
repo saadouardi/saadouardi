@@ -9,6 +9,7 @@ import { Portfolio } from "./sections/Portfolio/Portfolio";
 import { ContactSection } from "./sections/Contact/Contact";
 import { Footer } from '../src/components/common/Footer/Footer';
 import { TakeMeUp } from '../src/components/common/TakeMeUp/TakeMeUp';
+
 const App = () => {
   return (
     <>
