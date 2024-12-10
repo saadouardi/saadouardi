@@ -5,20 +5,20 @@ export const Skill = ({Icon,Name,Level})=>{
     }
     return(
         <>
-            <div class="main-skill__container">
-                <div class="skill__img">
+            <div className="main-skill__container">
+                <div className="skill__img">
                     <img src={Icon} alt=""/>
                 </div>
 
-                <div class="main-skill___container">
-                    <div class="skill__container">
+                <div className="main-skill___container">
+                    <div className="skill__container">
                         <h3>{Name}</h3>
                         <h3>{Level}%</h3>
                     </div>
 
-                    <div class="skill-progression-bar__container">
-                        <div class="progression-bar__container">
-                            <div class="progression-bar__value" style={progressionBarStyle}></div>
+                    <div className="skill-progression-bar__container">
+                        <div className="progression-bar__container">
+                            <div className="progression-bar__value" style={progressionBarStyle}></div>
                         </div>
                     </div>
                 </div>

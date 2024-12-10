@@ -17,10 +17,10 @@ import Arabic from '../../assets/icons/flags/Arabic.png';
 export const SkillSection = () =>{
     return(
         <section id='skills'>
-            <div class="section__title_div Title">
-                <h1 class="section__title">My <span class="span__title">Skills</span></h1>
+            <div className="section__title_div Title">
+                <h1 className="section__title">My <span className="span__title">Skills</span></h1>
             </div>
-            <div class="skills-list__container section-content">
+            <div className="skills-list__container section-content">
                 <Skills Title='FRONTEND' 
                     Icon1={HTML} Name1='HTML' Level1='95' 
                     Icon2={CSS} Name2='CSS3/SCSS' Level2='90' 

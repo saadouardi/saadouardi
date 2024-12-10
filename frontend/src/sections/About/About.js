@@ -20,7 +20,7 @@ export const About = () => {
                             effectively to team success.
                         </h5>
                     </div>
-                    <div class="experiences">
+                    <div className="experiences">
                         <Experience Title='03+' Description='Years experience'/>
                         <Experience Title='20+' Description='Completed project'/>
                         <Experience Title='03+' Description='Companies worked'/>

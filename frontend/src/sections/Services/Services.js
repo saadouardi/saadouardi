@@ -31,11 +31,11 @@ export const ServicesSection = ()=>{
 
     return(
         <section id='services'>
-            <div class="section__title_div Title">
-                <h1 class="section__title">MY <span class="span__title">SERVICES</span></h1>
-                <h6 class="section__title_description">What I offer</h6>
+            <div className="section__title_div Title">
+                <h1 className="section__title">MY <span className="span__title">SERVICES</span></h1>
+                <h6 className="section__title_description">What I offer</h6>
             </div>
-            <div class="section services__list">
+            <div className="section services__list">
                 <Services Icon={FrontendIcon} Title='FRONTEND' Description={frontendDesc} />
                 <Services Icon={BackendIcon} Title='BACKEND' Description={backendDesc} />
                 <Services Icon={DesignIcon} Title='DESIGN' Description={designDesc} />
