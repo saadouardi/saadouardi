@@ -151,14 +151,14 @@ button {
 
 button:hover {
     background: var(--button-hover);
-    a, p, svg, span{
+    a, p, svg, span {
         color: var(--button-content-hover) !important;
     }
 }
 
 a {
     color:var(--link-color);
-    text-decoration: none;
+    text-decoration: none !important;
     font-size: 15px;
     font-weight: 400;
 }

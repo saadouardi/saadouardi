@@ -4,11 +4,20 @@ import { Experience } from '../../components/Experience/Experience';
 import './About.scss';
 
 export const About = () => {
-    return(
+    const experiences = [
+        { Title: '03+', Description: 'Years experience' },
+        { Title: '20+', Description: 'Completed project' },
+        { Title: '03+', Description: 'Companies worked' }
+    ];
+    return (
         <>
             <section className='about' id='about'>
                 <div className="section-content">
-                    <Title Title='About' SpanTitle='Me' Description='Get to know me'/>
+                    <Title 
+                        Title='About' 
+                        SpanTitle='Me' 
+                        Description='Get to know me'
+                    />
                     <div>
                         <h5>
                             Dedicated and innovative computer science student from Minnesota State University, blending creativity and
@@ -21,9 +30,13 @@ export const About = () => {
                         </h5>
                     </div>
                     <div className="experiences">
-                        <Experience Title='03+' Description='Years experience'/>
-                        <Experience Title='20+' Description='Completed project'/>
-                        <Experience Title='03+' Description='Companies worked'/>
+                        {experiences.map((experience, index) => (
+                            <Experience 
+                                key={index} 
+                                Title={experience.Title} 
+                                Description={experience.Description} 
+                            />
+                        ))}
                     </div>
                 </div> 
             </section>

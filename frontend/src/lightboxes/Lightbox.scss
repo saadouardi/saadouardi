@@ -1,5 +1,5 @@
-.Main-Lightbox{
-    background-color: rgba(0, 0, 0, 0.315);
+.main-lightbox {
+    background-color: rgba(0, 0, 0, 0.8);
     height: 100vh;
     width: 100%;
     display: flex;
@@ -10,45 +10,82 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9000;
-    .Lightbox{
-        background-color: var(--primary-backgroundColor);
+
+    .lightbox {
+        background-color: var(--primary-bg);
         width: 600px;
         height: 500px;
+        padding: 20px;
         box-shadow: 1px 1px 20px rgb(167, 167, 167);
         border-radius: 24px;
         cursor: pointer;
-        .Lightbox-Content{
+
+        .lightbox-content {
             height: 100%;
             width: 100%;
-            .Header{
-                .Header-Content{
+
+            .lightbox-header {
+                .lightbox-header-content {
                     position: relative;
-                    .Title{
-                        span{
-                            font-size: 100px;
+
+                    .lightbox-header-title {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        span {
+                            font-size: 60px;
                         }
                     }
-                    .Close-Btn{
+
+                    div.close-btn{
+                        background-color: black;
+                        height: 40px;
+                        width: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 10px;
+                        border-radius: 50%;
                         position: absolute;
-                        top: 30%;
-                        right: 0;
-                        transform: translate(-50%, -50%);
+                        top: 10px;
+                        right: 10px;
+                        svg {
+                            height: 20px;
+                            width: 20px;
+                            cursor: pointer;
+                            color: white;
+                        }
                     }
                 }
             }
-            .Body{
+            .lightbox-body {
                 height: 80%;
-            }
-        }
-    }
-    .LightboxContent{
-        .Content{
-            svg{
-                height: 40px;
-                width: 40px;
-            }
-            span{
-                font-size: 30px;
+
+                .lightbox-body-content {
+                    .lightbox-body-list {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: center;
+                        gap: 20px;
+                        
+                        .lightbox-body-item {
+                            display: flex;
+                            align-items: start;
+                            justify-content: start;
+                            gap: 15px;
+                            
+                            svg {
+                                height: 40px;
+                                width: 40px;
+                            }
+
+                            span {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

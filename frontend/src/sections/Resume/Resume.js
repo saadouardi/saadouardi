@@ -1,3 +1,5 @@
+import React from 'react';
+import { Title } from '../../components/common/Title/Title';
 import { Resume } from '../../components/Sections/Resume/Resume';
 import MasterIsolation from '../../assets/images/Resume/Experience/MI-logo.jpg';
 import Netone from '../../assets/images/Resume/Experience/netone.jpeg';
@@ -9,11 +11,11 @@ import Germany from '../../assets/images/Flags/germany.png';
 export const ResumeSection = ()=>{
     return(
         <section id='resume'>
-            <div className="section__title_div Title">
-                <h1 className="section__title">MY <span className="span__title">RESUME</span></h1>
-                <h6 className="section__title_description">My parkour</h6>
-            </div>
-
+            <Title
+                Title='My'
+                SpanTitle='Resume'
+                Description='My parkour'
+            />
             <div className="resume-global__container">
                 <div className="Education resume">
                     <div className="resume__subtitle">

@@ -1,15 +1,16 @@
 
 
-.skills-list__container{
+.skills-list__container {
     display: flex;
     align-items: center;
     justify-content: center ;
     flex-wrap: wrap;
     gap: 20px;
 
-    .skills{
+    .skills {
         width: 500px;
-        height: 350px;
+        height: fit-content;
+        min-height: 350px;
         border-radius: 9px;
         display: flex;
         justify-content: center;

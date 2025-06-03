@@ -1,4 +1,4 @@
-.main-skill__container{
+.main-skill-container {
     width: 100%;
     display: flex;
     align-items: center;
@@ -6,27 +6,36 @@
     gap: 8px;
     padding: 5px;
 
-    .skill__img{
-        img{
-            height: 50px;
-            width: 50px;
+    .skill-img {
+        position: relative;
+        img {
+            height: 60px;
+            width: 60px;
+            border-radius: 25%;
+            object-fit: cover;
+            background-position: center;
+            background-size: cover;
+
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+            
         }
     }
 
-    .main-skill___container{
+    .skill-container-content {
         width: 100%;
-        .skill__container{
+
+        .skill-container {
             display: flex;
             justify-content: space-between;
-            h3{
+            h3 {
                 font-size: 20px;
             }
         }
     }
 
-    .skill-progression-bar__container{
-
-        .progression-bar__container{
+    .progression-bar-container {
+        .progression-bar-content {
             height: 12px;
             border: 2px solid var(--main-color);
             border-radius: 6px;
@@ -35,7 +44,7 @@
             justify-content: start;
             padding: 10px 4px;
 
-            .progression-bar__value{
+            .progression-bar-value {
                 background: var(--main-color);
                 border-radius: 4px;
                 width: 90%;
@@ -44,7 +53,3 @@
         }
     }
 }
-
-
-
-

@@ -18,21 +18,19 @@ export const Navbar = ({handleTakeMeUp}) => {
 
     useEffect(() => {
         const observerOptions = {
-            root: null, // Use the viewport as the root
-            threshold: 0.6, // Trigger when 60% of the section is visible
+            root: null,
+            threshold: 0.6,
         };
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    // Find the index of the intersecting section
                     const index = navItems.indexOf(entry.target.id);
                     setActiveIndex(index);
                 }
             });
         }, observerOptions);
 
-        // Observe each section
         navItems.forEach(id => {
             const section = document.getElementById(id);
             if (section) {
@@ -41,7 +39,6 @@ export const Navbar = ({handleTakeMeUp}) => {
         });
 
         return () => {
-            // Cleanup observer on component unmount
             navItems.forEach(id => {
                 const section = document.getElementById(id);
                 if (section) {
