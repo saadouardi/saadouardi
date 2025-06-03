@@ -1,33 +1,36 @@
 {
   "files": {
-    "main.css": "/saadouardi/static/css/main.699679b9.css",
-    "main.js": "/saadouardi/static/js/main.3727881d.js",
+    "main.css": "/saadouardi/static/css/main.34f54cd3.css",
+    "main.js": "/saadouardi/static/js/main.7a760776.js",
     "static/js/453.dc393c8f.chunk.js": "/saadouardi/static/js/453.dc393c8f.chunk.js",
     "static/media/profile.png": "/saadouardi/static/media/profile.b6d3f5eb24946333824e.png",
+    "static/media/js-ts.jpg": "/saadouardi/static/media/js-ts.2fdb1b4600ee44f73e9c.jpg",
+    "static/media/react-next.png": "/saadouardi/static/media/react-next.04495cc9cdae24f5dd5c.png",
+    "static/media/bootstrap-&-tailwind.png": "/saadouardi/static/media/bootstrap-&-tailwind.57cee9b7bf51b762d108.png",
+    "static/media/azure.png": "/saadouardi/static/media/azure.27603aaf1cc44b44deae.png",
     "static/media/Saad-Ouardi_Resume.pdf": "/saadouardi/static/media/Saad-Ouardi_Resume.ddbb4b6afcbeb10ed35e.pdf",
-    "static/media/python.png": "/saadouardi/static/media/python.6a5cbc319ab3ddf8ef92.png",
+    "static/media/postgresql.png": "/saadouardi/static/media/postgresql.1e09c2701cb1e015f927.png",
     "static/media/github.png": "/saadouardi/static/media/github.c2c1684c95ee51ed6e44.png",
     "static/media/git.png": "/saadouardi/static/media/git.985a7327fc7347ebdba0.png",
-    "static/media/nodejs.png": "/saadouardi/static/media/nodejs.007e99f68b718e476aba.png",
     "static/media/Arabic.png": "/saadouardi/static/media/Arabic.e4b337479875cce5795e.png",
-    "static/media/react.png": "/saadouardi/static/media/react.3bf6fb4b18b1f904676d.png",
     "static/media/restaurant-logo.png": "/saadouardi/static/media/restaurant-logo.23e5da7ec98946412a4f.png",
+    "static/media/css.png": "/saadouardi/static/media/css.ac2736c00cb6dc828b06.png",
     "static/media/todolist.png": "/saadouardi/static/media/todolist.fcca87b1e90b5fe2399a.png",
-    "static/media/mysql.png": "/saadouardi/static/media/mysql.9b321b61f1d106598f17.png",
     "static/media/dashboard-logo.png": "/saadouardi/static/media/dashboard-logo.87c36bcd4f4f546e7836.png",
     "static/media/form-logo.png": "/saadouardi/static/media/form-logo.1cf5281ae2442d39d97d.png",
-    "static/media/css.png": "/saadouardi/static/media/css.463e319bad8e0edf1ef7.png",
+    "static/media/docker.png": "/saadouardi/static/media/docker.02eecc1dcfaa003dee34.png",
     "static/media/netone.jpeg": "/saadouardi/static/media/netone.92ddb56b8f8bf04d8636.jpeg",
-    "static/media/js.png": "/saadouardi/static/media/js.3dfb665e058d08c99f28.png",
     "static/media/freelance.jpg": "/saadouardi/static/media/freelance.8a31f6d8f39e44aef756.jpg",
+    "static/media/django.png": "/saadouardi/static/media/django.58ddc4e806eefb36f476.png",
+    "static/media/express.webp": "/saadouardi/static/media/express.553d9a5fb9e4ed227daf.webp",
     "static/media/morocco.svg": "/saadouardi/static/media/morocco.97605469af452a2136581fc627b6f3d9.svg",
     "index.html": "/saadouardi/index.html",
-    "main.699679b9.css.map": "/saadouardi/static/css/main.699679b9.css.map",
-    "main.3727881d.js.map": "/saadouardi/static/js/main.3727881d.js.map",
+    "main.34f54cd3.css.map": "/saadouardi/static/css/main.34f54cd3.css.map",
+    "main.7a760776.js.map": "/saadouardi/static/js/main.7a760776.js.map",
     "453.dc393c8f.chunk.js.map": "/saadouardi/static/js/453.dc393c8f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.699679b9.css",
-    "static/js/main.3727881d.js"
+    "static/css/main.34f54cd3.css",
+    "static/js/main.7a760776.js"
   ]
 }
