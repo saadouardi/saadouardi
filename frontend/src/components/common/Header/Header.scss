@@ -149,16 +149,17 @@ header {
 }
 /*----------------------LAPTOP DEVICES----------------------*/
 @media only screen and (max-width: 1024px ) and (max-width:1439px) {
-
-    button.cv-btn {
-        border-radius: 50%;
-        height: 50px;
-        width: 50px;
-        span {
-            display: none;
-        }
-        svg {
-            display: block !important;
+    header {
+        button.cv-btn {
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            span {
+                display: none;
+            }
+            svg {
+                display: block !important;
+            }
         }
     }
 }

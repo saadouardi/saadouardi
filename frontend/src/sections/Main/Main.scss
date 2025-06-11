@@ -29,6 +29,7 @@ section.main {
                 font-size: 60px;
             }
         }
+
         .main-content {
             width: 100%;
             display: flex;
@@ -66,8 +67,8 @@ section.main {
             justify-content: start;
             gap: 20px;
             position: absolute;
-            bottom: 20px;
-            left: 0;
+            top: 90%;
+            right: 88%;
             z-index: 9;
 
             svg {
@@ -120,12 +121,13 @@ section.main {
             }
     
             .main-title {
-                h1{
+                h1 {
                     font-size: 35px !important;
                     text-align: center !important;
                     padding: 0 !important;
                 }
-                h3{
+
+                h3 {
                     font-size: 30px !important;
                     text-align: center;
                 }
@@ -136,15 +138,6 @@ section.main {
                     font-size: 20px;
                     text-align: center;
                 }
-            }
-            .social-media-container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-                position: fixed;
-                bottom: 50%;
-                left: 85% !important;
             }
         }
     
@@ -189,13 +182,6 @@ section.main {
                     text-align: center;
                 }
             }
-    
-            .social-media-container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                position: static;
-            }
         }
     
         .image-container {
@@ -239,13 +225,7 @@ section.main {
                     text-align: center;
                 }
             }
-    
-            .social-media-container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                position: static;
-            }
+
         }
     
         .image-container {
@@ -275,13 +255,12 @@ section.main {
             }
 
             .social-media-container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 flex-direction: column;
-                position: fixed;
-                bottom: 50%;
-                left: 92%;
+                gap: 10px;
+                position: fixed !important;
+                top: 60%;
+                right: 0;
+                transform: translate(-50%, -50%);
             }
         }
     }

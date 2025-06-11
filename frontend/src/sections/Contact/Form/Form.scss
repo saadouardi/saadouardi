@@ -1,5 +1,5 @@
-form{
-    .Form{
+form {
+    .Form {
         width: 100%;
         flex-wrap: wrap;
         .Form-Inputs{
@@ -78,7 +78,13 @@ form{
 
 /*---------------------- MOBILE VERSION----------------------*/
 @media screen and (max-width: 768px){
-    form{
+    form {
         width: 100%;
+
+        input, textarea {
+            width: 300px;
+            outline: none;
+            border-radius: 5px;
+        }
     }
 }

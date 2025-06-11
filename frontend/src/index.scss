@@ -51,7 +51,7 @@
         --dark-input-placeholder: #fd4e4e;
         --dark-primary-icon-color: #E4E6EB;
         --dark-secondary-icon-color: #E4E6EB;
-        --dark-hover-effect: rgb(87, 87, 87); /* General hover effect */
+        --dark-hover-effect: rgb(87, 87, 87);
         --dark--select-color: #FFFFFF;
         --dark--select-bg: #fd4e4e;
 
@@ -144,7 +144,7 @@ button {
     align-items: center;
     justify-content: center;
     gap: 5px;
-    a, p, svg, span{
+    a, p, svg, span {
         color: var(--button-content) !important;
     }
 }
@@ -287,31 +287,7 @@ svg {
 .fadeIn {
     animation: fadeIn 1s linear;
 }
-/*----------- SECTIONS STYLES ------------------*/
-.section__title_div{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
-}
-.section__title{
-    font-size: 100px;
-    font-weight: 800;
-    font-style: normal;
-    padding: 20px;
-}
-.section__title_description{
-    font-size: 40px;
-    font-weight: 700;
-    font-style: normal;
-}
-.section{
-    font-size: 20px;
-    font-weight: 600;
-    font-style: normal;
-}
+
 /*-----------MOBILE DEVICE-----------*/
 @media screen and (max-width: 768px){
     section{
@@ -342,16 +318,7 @@ svg {
     .section1__about_me h5{
         text-align: start;
     }
-
-    /*------------ SECTION : MY SKILLS  ------------*/
-
-    .section__title_div h1{
-        font-size: 50px;
-    }
-    .section__title_div h6{
-        text-align: center;
-        font-size: 30px;
-    }
+    
     .bio__container{
         width: 80%;
     }

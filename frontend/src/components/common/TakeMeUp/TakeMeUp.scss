@@ -1,12 +1,15 @@
-svg.take-me-up{
+
+button.take-me-up {
     height: 50px;
     width: 50px;
+    border-radius: 100px;
     position: fixed;
     top: 90%;
-    left: 90%;
+    right:20px;
+    z-index: 1000;
     animation: bounce 3s infinite;
 }
-svg.take-me-up:hover{
+button.take-me-up:hover{
     height: 50px;
     width: 50px;
     animation: bounceBtn 2s linear;

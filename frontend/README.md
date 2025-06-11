@@ -11,6 +11,7 @@
 ## Ideas
 
 - make website for Streamers [Psycho Joker, Hamrita, Vodka, Ilyas ElMalki, ...]
+- generate images based on changed text, when backend serpent face ===python
 
 ### Tasks
 
