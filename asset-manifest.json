@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/saadouardi/static/css/main.34f54cd3.css",
-    "main.js": "/saadouardi/static/js/main.7a760776.js",
+    "main.css": "/saadouardi/static/css/main.f528cb27.css",
+    "main.js": "/saadouardi/static/js/main.e360ffd5.js",
     "static/js/453.dc393c8f.chunk.js": "/saadouardi/static/js/453.dc393c8f.chunk.js",
     "static/media/profile.png": "/saadouardi/static/media/profile.b6d3f5eb24946333824e.png",
     "static/media/js-ts.jpg": "/saadouardi/static/media/js-ts.2fdb1b4600ee44f73e9c.jpg",
@@ -17,7 +17,6 @@
     "static/media/css.png": "/saadouardi/static/media/css.ac2736c00cb6dc828b06.png",
     "static/media/todolist.png": "/saadouardi/static/media/todolist.fcca87b1e90b5fe2399a.png",
     "static/media/dashboard-logo.png": "/saadouardi/static/media/dashboard-logo.87c36bcd4f4f546e7836.png",
-    "static/media/form-logo.png": "/saadouardi/static/media/form-logo.1cf5281ae2442d39d97d.png",
     "static/media/docker.png": "/saadouardi/static/media/docker.02eecc1dcfaa003dee34.png",
     "static/media/netone.jpeg": "/saadouardi/static/media/netone.92ddb56b8f8bf04d8636.jpeg",
     "static/media/freelance.jpg": "/saadouardi/static/media/freelance.8a31f6d8f39e44aef756.jpg",
@@ -25,12 +24,12 @@
     "static/media/express.webp": "/saadouardi/static/media/express.553d9a5fb9e4ed227daf.webp",
     "static/media/morocco.svg": "/saadouardi/static/media/morocco.97605469af452a2136581fc627b6f3d9.svg",
     "index.html": "/saadouardi/index.html",
-    "main.34f54cd3.css.map": "/saadouardi/static/css/main.34f54cd3.css.map",
-    "main.7a760776.js.map": "/saadouardi/static/js/main.7a760776.js.map",
+    "main.f528cb27.css.map": "/saadouardi/static/css/main.f528cb27.css.map",
+    "main.e360ffd5.js.map": "/saadouardi/static/js/main.e360ffd5.js.map",
     "453.dc393c8f.chunk.js.map": "/saadouardi/static/js/453.dc393c8f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.34f54cd3.css",
-    "static/js/main.7a760776.js"
+    "static/css/main.f528cb27.css",
+    "static/js/main.e360ffd5.js"
   ]
 }
