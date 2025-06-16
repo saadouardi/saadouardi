@@ -18,7 +18,12 @@ export const Form = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:5000/send', {
+            const baseUrl =
+                process.env.NODE_ENV === 'development'
+                    ? process.env.REACT_APP_API_URL
+                    : 'https://portfolio-backend-4vv0.onrender.com';
+
+            const response = await fetch(`${baseUrl}/send`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
