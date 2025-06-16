@@ -23,13 +23,14 @@ app.post('/send', (req, res) => {
 
     const mailOptions = {
         from: email,
-        to: 'saad.ouardi.developer@gmail.com',
+        to: process.env.EMAIL,
         subject: subject,
         text: `Name: ${fullName}\nEmail: ${email}\n\nMessage: ${message}`,
     };
 
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
+            console.error("Error while sending email:", error);
             return res.status(500).send(error.toString());
         }
         res.status(200).send('Email sent: ' + info.response);

@@ -17,7 +17,7 @@ export const Portfolio = () => {
 
     let [index, setIndex] = useState(0);
 
-    const handleSliderNext = () =>{
+    const handleSliderNext = () => {
         setIndex(index === projectsList.length - 1 ? 0 : index + 1);
     }
 
@@ -29,7 +29,7 @@ export const Portfolio = () => {
         setIndex(index);
     }
 
-    useEffect(() =>{
+    useEffect(() => {
         const interval = setInterval(handleSliderNext, 5000);
         return () => clearInterval(interval);
     })
@@ -123,7 +123,7 @@ export const Portfolio = () => {
                             return(
                                 <div 
                                     key={idx} 
-                                    className={idx === index ? 'active-circle' : 'default-pagination'}
+                                    className={idx === index ? 'active-pagination' : 'default-pagination'}
                                     onClick={() => {handlePagination(idx)}}
                                 >
                                 </div>

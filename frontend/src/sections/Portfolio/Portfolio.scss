@@ -93,7 +93,7 @@ button.check-now-btn{
     left: 0;
     right: 0;
 
-    .default-pagination{
+    .default-pagination {
         width: 20px;
         height: 20px;
         border-radius: 100%;
@@ -101,10 +101,12 @@ button.check-now-btn{
         cursor: pointer;
         transition: all .3s linear;
     }
-    .default-pagination:hover{
+
+    .default-pagination:hover {
         background-color: rgb(118, 118, 118);
     }
-    .active-pagination{
+
+    .active-pagination {
         width:40px;
         height: 15px;
         border-radius: 25px;
