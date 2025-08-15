@@ -1,9 +1,12 @@
-import Profile from '../../assets/images/main/profile.png';
+import React, { useEffect, useState } from 'react';
+import ProfileFrontend from '../../assets/images/main/profile-frontend.png';
+import ProfileBackend from '../../assets/images/main/profile-backend.png';
 import { Typewriter } from 'react-simple-typewriter';
 import Resume from '../../assets/pdf/saad_ouardi_cv.pdf';
 import './Main.scss';
 
 export const Main = () => {
+    const [index, setIndex] = useState(0);
     const socialMediaList = [
         {
             icon: <svg 
@@ -43,6 +46,15 @@ export const Main = () => {
         },
     ]
 
+    const profiles = [ProfileFrontend, ProfileBackend]
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIndex((prevIndex) => (prevIndex + 1) % profiles.length);
+        }, 2800);
+
+        return () => clearInterval(interval);
+    })
     return(
         <>
             <section className='main main-section'>
@@ -124,7 +136,7 @@ export const Main = () => {
                     </ul>
                     <div className="image-container">
                         <img 
-                            src={Profile} 
+                            src={profiles[index]} 
                             alt="Saad Ouardi" 
                             className="Saad-Ouardi-img"
                         />

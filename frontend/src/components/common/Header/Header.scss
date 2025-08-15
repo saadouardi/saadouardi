@@ -45,6 +45,40 @@ header {
 
         .mobile-navbar {
             display: none;
+            position: relative;
+
+            .dropdown-menu-content {
+                background-color: var(--dark-primary-bg);
+                box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+                border-radius: 16px;
+                padding: 10px;
+                width: 300px;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                z-index: 9;
+                overflow-y: auto;
+                height: 90vh;
+
+                ul {
+                    li.navbar-list {
+                        background-color: var(--main-color);
+                    }
+                }
+
+                img.profile-image {
+                    background-color: var(--main-color);
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+            }
+            
+            button {
+                border-radius: 50%;
+                padding: 15px;
+            }
         }
     }
 }
@@ -55,22 +89,30 @@ header {
             border-radius: 50%;
             height: 50px;
             width: 50px;
+            
             span {
                 display: none;
             }
+
             svg {
                 display: block !important;
             }
         }
         .header-content {
             .logo-navbar-container {
-                .navbar{
+                .navbar {
                     display: none;
                 }
             }
 
-            .mobile-navbar{
-                display: block;
+            .buttons-container {
+                .toggle-btn, .cv-link {
+                    display: none;
+                }
+
+                .mobile-navbar{
+                    display: block;
+                }
             }
         }
     }
