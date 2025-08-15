@@ -85,14 +85,14 @@ export const Header = () => {
     })
 
     window.addEventListener('scroll', () => {
-        if (!mode) {
+        if (mode === 'bright') {
             if (window.scrollY > 0) {
-                document.querySelector('header').style.backgroundColor = '#31363F';
+                document.querySelector('header').style.backgroundColor = 'var(--dark-secondary-bg)';
                 document.querySelector('header').style.boxShadow = '.1px .1px 2px white';
                 document.querySelector('header').style.borderBottom = '1px solid grey';
                 document.querySelector('header').style.opacity = '0.5px';
             } else {
-                document.querySelector('header').style.backgroundColor = 'transparent';
+                document.querySelector('header').style.backgroundColor = 'var(--dark-primary-bg)';
                 document.querySelector('header').style.boxShadow = '';
                 document.querySelector('header').style.border = '';
             }
