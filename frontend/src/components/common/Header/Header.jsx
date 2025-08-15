@@ -78,9 +78,11 @@ export const Header = () => {
     useEffect(() => {
         if(mode === 'bright') {
             localStorage.setItem("theme", "dark");
+            document.querySelector('header').style.backgroundColor = 'var(--dark-secondary-bg)';
 
         } else {
             localStorage.setItem("theme", "bright");
+            document.querySelector('header').style.backgroundColor = 'var(--secondary-bg)';
         }
     })
 
