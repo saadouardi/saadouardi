@@ -44,8 +44,8 @@ export const Form = () => {
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <div className='Form Flex-Center'>
-                    <div className="Form-Inputs Flex-Center">
+                <div className='Form flex-center-center'>
+                    <div className="Form-Inputs flex-center-center">
                         <div title='Full Name' className="input__container">
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
@@ -95,7 +95,7 @@ export const Form = () => {
                             />
                         </div>
                     </div>
-                    <div className='Form-Inputs Flex-Center'>
+                    <div className='Form-Inputs flex-center-center'>
                         <input 
                             type="text" 
                             name="subject" 
@@ -116,7 +116,7 @@ export const Form = () => {
                         />
                     </div>
                 </div>
-                <div className='Submit-Input Flex-Center'>
+                <div className='Submit-Input flex-center-center'>
                     <input 
                         type="submit" 
                         value="Submit" 

@@ -36,7 +36,7 @@ section.main {
             align-items: center;
             justify-content: space-between;
             flex-direction: row;
-            gap:20px;
+            gap: 20px;
     
             .buttons-container {
                 display: flex;
@@ -61,10 +61,11 @@ section.main {
             }
         }
 
-        .social-media-container {
+        ul.social-media-container {
             display: flex;
             align-items: center;
             justify-content: start;
+            padding: 0;
             gap: 20px;
             position: absolute;
             top: 90%;
@@ -79,11 +80,8 @@ section.main {
 
             li {
                 list-style: none;
-                .bg__icon {
-                    background: var(--main-color) !important;
-                    border-radius: 100px;
-                    padding: 8px;
-                    transition: all .3s ease;
+                button {
+                    border-radius: 50%;
                 }
             }
         }
@@ -144,8 +142,13 @@ section.main {
         .image-container {
             display: none;
         }
+
+        .main-content {
+            justify-content: center !important;
+        }
     }
 }
+
 /* ----------- TABLET DEVICES----------- */
 @media only screen and (max-width: 768px ) and (max-width:1023px) {
     section.main {
@@ -165,12 +168,13 @@ section.main {
             }
     
             .main-title {
-                h1{
+                h1 {
                     font-size: 35px;
                     text-align: center;
                     padding: 0 !important;
                 }
-                h3{
+
+                h3 {
                     font-size: 30px;
                     text-align: center;
                 }
@@ -189,43 +193,22 @@ section.main {
         }
     }
 }
+
 /* ----------- LAPTOP DEVICES----------- */
 @media only screen and (max-width: 1024px ) and (max-width:1439px) {
     section.main {
         height: fit-content;
         .main-container {
-
+            .main-content {
+                justify-content: center;
+            }
             .title-description-buttons-container {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-
                 .buttons-container {
                     display: flex;
                     align-items: center !important;
                     justify-content: center !important;
                 }
             }
-    
-            .title {
-                h1{
-                    font-size: 35px;
-                    text-align: center;
-                    padding: 0 !important;
-                }
-                h3{
-                    font-size: 30px;
-                    text-align: center;
-                }
-            }
-
-            .description {
-                h5 {
-                    font-size: 20px;
-                    text-align: center;
-                }
-            }
-
         }
     
         .image-container {
@@ -233,32 +216,35 @@ section.main {
         }
     }
 }
+
 /* ----------- DESCKTOP DEVICES----------- */
 @media only screen and (max-width: 1440px ){
     section.main {
         height: 550px;
         .main-container {
-            .main-title {
-                h1{
-                    font-size: 65px;
+            .main-content {
+                .main-title {
+                    h1{
+                        font-size: 65px;
+                    }
+    
+                    h3{
+                        font-size: 60px;
+                    }
                 }
-
-                h3{
-                    font-size: 60px;
+    
+                .description {
+                    h5 {
+                        font-size: 20px;
+                    }
                 }
             }
 
-            .description {
-                h5 {
-                    font-size: 20px;
-                }
-            }
-
-            .social-media-container {
+            ul.social-media-container {
                 flex-direction: column;
                 gap: 10px;
                 position: fixed !important;
-                top: 60%;
+                top: 50%;
                 right: 0;
                 transform: translate(-50%, -50%);
             }
@@ -266,10 +252,6 @@ section.main {
     }
 
     .image-container {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-
         img {
             height: 580px !important;
             width: 580px !important;

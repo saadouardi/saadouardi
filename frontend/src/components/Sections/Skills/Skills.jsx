@@ -1,21 +1,18 @@
-import {Skill} from './Skill/Skill';
+import { Skill } from './Skill/Skill';
 import HTML from '../../../assets/icons/coding/frontend/html.png';
 import CSS from '../../../assets/icons/coding/frontend/css.png';
 import JS from '../../../assets/icons/coding/frontend/js-ts.jpg';
 import REACT from '../../../assets/icons/coding/frontend/react-next.png';
 import CSSFRAMEWORK from '../../../assets/icons/coding/frontend/bootstrap-&-tailwind.png';
-
 import EXPRESS from '../../../assets/icons/coding/backend/express.webp';
 import DJANGO from '../../../assets/icons/coding/backend/django.png';
 import FASTAPI from '../../../assets/icons/coding/backend/fastapi.png';
 import POSTGRESQL from '../../../assets/icons/coding/backend/postgresql.png';
 import MONGODB from '../../../assets/icons/coding/backend/mongodb.png';
-
 import GIT from '../../../assets/icons/coding/versioncontrol/git.png';
 import GITHUB from '../../../assets/icons/coding/versioncontrol/github.png';
 import AZURE from '../../../assets/icons/coding/versioncontrol/azure.png';
 import DOCKER from '../../../assets/icons/coding/versioncontrol/docker.png';
-
 import English from '../../../assets/icons/flags/English.png';
 import Freanch from '../../../assets/icons/flags/Frensch.png';
 import German from '../../../assets/icons/flags/German.png';
@@ -60,7 +57,7 @@ export const Skills = () => {
                     key={index}
                 >
                     <h1>{skill.title}</h1>
-                    <div className="skills Secondary-BG">
+                    <div className="skills container">
                         {skill.skills.map((skillItem, idx) => (
                             <Skill 
                                 key={idx} 

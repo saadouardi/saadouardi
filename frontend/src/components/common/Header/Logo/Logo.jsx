@@ -4,9 +4,14 @@ import './Logo.scss';
 export const Logo = ({handleTakeMeUp}) => {
     return (
         <div 
-            className="Logo"
+            className="logo"
         >
-            <span href="#main" onClick={handleTakeMeUp}>Saad Ouardi</span>
+            <span 
+                href="#main" 
+                onClick={handleTakeMeUp}
+            >
+                Saad Ouardi
+            </span>
         </div>
     )
 }

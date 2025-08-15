@@ -1,6 +1,6 @@
 .ContactContainer{
     transition: all 0.4s linear;
-    .contact{
+    .contact {
         display: flex;
         align-items: center;
         justify-content: start;
@@ -16,6 +16,8 @@
             justify-content: center;
             background-color:  white;
             border-radius: 9px 9px 0 0;
+            border: 2px solid var(--main-color);
+            padding: 15px 0;
             svg{
                 width: 25px;
                 height: 25px;

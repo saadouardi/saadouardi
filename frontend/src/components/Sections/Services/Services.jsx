@@ -11,7 +11,7 @@ export const Services = ({Icon, Title, Description}) =>{
     return (
         <>
             <div 
-                className="Service service Secondary-BG" 
+                className="Service service container" 
                 onClick={handleOpen}
             >
                 <Icon   />

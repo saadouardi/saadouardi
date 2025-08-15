@@ -2,15 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 
-    button{
+    button {
         border-radius: 100px !important;
         width: fit-content;
         height: fit-content;
         padding: 10px;
         animation: none;
-        svg{
+        
+        svg {
             color: white !important;
         }
     }

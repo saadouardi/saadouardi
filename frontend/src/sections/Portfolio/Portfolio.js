@@ -43,8 +43,6 @@ export const Portfolio = () => {
             <div 
                 className="slider-section section w-100"
                 style={{
-                    backgroundColor: 'white',
-                    // backgroundImage: `url(${projectsList[index].image})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}

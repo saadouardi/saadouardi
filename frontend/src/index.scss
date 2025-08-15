@@ -5,6 +5,7 @@
 :root{
         /* Light Mode Colors */
         --main-color: #fd4e4e;
+        --main-bg-color: linear-gradient(194deg, rgb(249, 47, 47) 0%, rgba(255,102,102,1) 100%);
         --primary-bg: #FFFFFF;
         --secondary-bg: #e9e9e9;
         --primary-text-color: #000000; // #333333
@@ -79,10 +80,6 @@ html {
     scroll-behavior: smooth;
 }
 
-// body{
-//     background-color: var(--secondary-bg);
-// }
-
 section {
     width: 100%;
     display: flex;
@@ -97,17 +94,51 @@ section {
     }
 }
 
-section.main-section{
-    background-color: #f4f3f3;
+main.light-theme {
+    section:nth-child(odd) {
+        background-color: var(--primary-bg) !important;
+        .container {
+            background-color: var(--secondary-bg) !important;
+        }
+    }
+    section:nth-child(even) {
+        background-color:var(--secondary-bg) !important;
+        .container {
+            background-color: var(--primary-bg) !important;
+        }
+    }
+
+        h1, h2, h3, h4, h5, h6, p, a, svg, input {
+        color: var(--text-color) !important;
+    }
+    
+    footer {
+        background: white !important;
+    }
 }
 
-section.secondary-section{
-    background-color: #f4f3f3 !important;
-}
+main.dark-theme {
 
-footer {
-    color: var(--primary-bg);
-    padding: 20px 0;
+    section:nth-child(odd) {
+        background-color: var(--dark-primary-bg) !important;
+        .container {
+            background-color: var(--dark-secondary-bg) !important;
+        }
+    }
+    section:nth-child(even) {
+        background-color:var(--dark-secondary-bg) !important;
+        .container {
+            background-color: var(--dark-primary-bg) !important;
+        }
+    }
+
+    h1, h2, h3, h4, h5, h6, p, a, svg, input {
+        color: var(--dark-text-color) !important;
+    }
+    
+    footer {
+        background: black !important;
+    }
 }
 
 main, footer {
@@ -128,7 +159,8 @@ input, select, textarea {
     border: 2px solid var(--input-border);
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder, 
+textarea::placeholder {
     color: var(--input-placeholder) !important;
 }
 
@@ -156,17 +188,24 @@ button:hover {
     }
 }
 
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
 a {
-    color:var(--link-color);
+    color:var(--link-color) !important;
     text-decoration: none !important;
     font-size: 15px;
     font-weight: 400;
 }
+
 a:hover {
     color: var(--link-hover);
 }
 
-a.active{
+a.active {
     color: var(--link-active) !important;
     font-weight: 600 !important;
 }
@@ -217,35 +256,30 @@ svg {
     }
 }
 /*-----------Flex------------------*/
-.flex-center-center{
+.flex-center-center {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 8px;
 }
-.flex-start-center{
+
+.flex-start-center {
     display: flex;
     align-items: start;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 8px;
 }
-.flex-center-start{
+
+.flex-center-start {
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 8px;
 }
-.flex-column{
-    flex-direction: column;
-}
-.Flex-Center{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-.Flex-Column{
+
+.flex-column {
     flex-direction: column;
 }
 
@@ -261,6 +295,7 @@ svg {
         transform: translateY(0);
     }
 }
+
 @keyframes bounceBtn {
     0%{
         transform: translateY(0);
@@ -273,6 +308,7 @@ svg {
         transform: translateY(0);
     }
 }
+
 @keyframes fadeIn {
     0%{
         opacity: 0;
@@ -284,13 +320,14 @@ svg {
         opacity: 1;
     }
 }
+
 .fadeIn {
     animation: fadeIn 1s linear;
 }
 
 /*-----------MOBILE DEVICE-----------*/
-@media screen and (max-width: 768px){
-    section{
+@media screen and (max-width: 768px) {
+    section {
         .section-content{
             width: 100%;
         }
@@ -352,12 +389,13 @@ svg {
 }
 /*-----------TABLET DEVICE----------- */
 @media only screen and (max-width: 768px ) and (max-width:1023px){
-    section{
-        .section-content{
+    section {
+        .section-content {
             width: 100%;
         }
     }
-    .section__div{
+
+    .section__div {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -365,8 +403,8 @@ svg {
 }
 /*-----------LAPTOP DEVICE----------- */
 @media only screen and (max-width: 1024px ) and (max-width:1439px){
-    section{
-        .section-content{
+    section {
+        .section-content {
             width: 100%;
         }
     }
@@ -379,7 +417,7 @@ svg {
 }
 /*-----------DESCKTOP DEVICE----------- */
 @media only screen and (max-width: 1440px ){
-    section{
+    section {
         .section-content{
             width: 100%;
         }

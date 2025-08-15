@@ -1,4 +1,4 @@
-.resume-global__container{
+.resume-main-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,7 +11,7 @@
         flex-direction: column;
         gap: 8px;
 
-        .resume__subtitle{
+        .resume-subtitle {
             display: flex;
             align-items: center;
             justify-content: start;
@@ -20,19 +20,19 @@
             cursor: pointer;
             transition: all .3s linear;
     
-            svg{
+            svg {
                 height: 50px;
                 width: 50px;
                 color: white;
             }
         }
-        .resume__subtitle:hover{
-            svg,h1{
+        .resume-subtitle:hover {
+            svg, h1 {
                 color: gold;
             }
         }
 
-        .resume__list{
+        .resume-list {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -42,9 +42,8 @@
     }
 }
 
-
-.Resume {
-    width: 480px;
+.resume-container {
+    width: 480px !important;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -53,12 +52,12 @@
     cursor: pointer;
     transition: all 0.4s linear;
     
-    .resume-details__container {
+    .resume-details {
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        .education__container {
+        .resume-header {
             width: 100%;
             display: flex;
 
@@ -82,49 +81,43 @@
             }
         }
 
-        .info__container{
+        .info-container {
             height: fit-content !important;
             display: flex;
             align-items: center;
             justify-content: end;
             padding: 0px 5px;
 
-            svg{
+            svg {
                 height:25px;
                 width: 25px;
-            }
-
-            svg:hover{
-                height:25px;
-                width: 25px;
-                color: #3ba7ff;
             }
         }
     }
 
-    .content{
+    .content {
         display: flex;
         align-items: start;
         justify-content: center;
         flex-direction: column;
 
-        h5{
+        h5 {
             color: var(--text-color-LM);
         }
 
-        p{
+        p {
             font-size: 15px;
             font-weight: 600;
         }
 
     }
 
-    .date__container{
+    .date__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        svg{
+        svg {
             height: 30px;
             width: 30px;
             color: var(--text-color-LM);
@@ -132,12 +125,13 @@
 
     }
     
-    h4{
+    h4 {
         font-size: 20px;
         font-weight: 700;
         
     }
-    h6{
+
+    h6 {
         font-size: 15px;
         font-weight: 600;
     }
@@ -145,29 +139,36 @@
 
 
 /*---------------------- MOBILE VERSION----------------------*/
-@media screen and (max-width: 768px){
-    .Resume {
-        width: 100%;
+@media screen and (max-width: 768px) {
+    .resume-container {
+        width: 100% !important;
         padding: 10px;
+
+        h5 {
+            strong {
+                font-size: 15px;
+            }
+        }
+
+        p {
+            font-size: 10px !important;
+        }
+
+        h5, span {
+            font-size: 12px;
+        }
+
     }
-    .resume__subtitle{
+    
+    .resume-subtitle {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .resume-main__container{
+
+    .resume-main__container {
         width: 300px;
         height: fit-content;
         gap: 0px;
-    }
-
-    .resume-main__container p{
-        font-size: 10px;
-    }
-    .resume-main__container h4{
-        font-size: 12px;
-    }
-    .resume-main__container h6{
-        font-size: 10px;
     }
 }

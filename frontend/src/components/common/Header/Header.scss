@@ -1,25 +1,26 @@
 header {
     width: 100%;
-    background: transparent;
+    background: transparent ;
     display: flex;
     align-items: center;
     justify-content: center;
     position: sticky;
     top: 0;
     z-index: 9;
+
     .header-content {
         width: 1440px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding: 2px 10px;
+        padding: 2px;
 
         .logo-navbar-container {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 4rem;
+            gap: 2rem;
         }
     
         .buttons-container {
@@ -44,111 +45,11 @@ header {
 
         .mobile-navbar {
             display: none;
-            position: relative;
-            a.profile{
-                height: fit-content !important;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 1rem;
-                img{
-                    width: 80px;
-                    height: 80px;
-                    border-radius: 50%;
-                    border: 2px solid black;
-                }
-                span{
-                    font-size: 20px;
-                    color: white !important;
-                }
-            }
-    
-            .navbar {
-                width: 80vw;
-                height: 100vh;
-                background-color: rgba(0, 0, 0, 0.605);
-                position: absolute;
-                top: calc(100% + 5px);
-                right: 0;
-                border-radius: 9px 0 9px 9px;
-                display: flex;
-                justify-content: start;
-                align-items: center;
-                flex-direction: column;
-                gap: 15px;
-                padding: 20px;
-    
-                .mobile-list_navbar {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 10px;
-    
-                    a {
-                        width: 90%;
-                        height: 50px;
-                        background-color: var(--link-bg);
-                        color: white !important;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 4px;
-                        cursor: pointer;
-                        transition: all 0.3s ease-in-out;
-                    }
-    
-                    a:hover {
-                        background-color: var(--link-hover);
-                    }
-                }
-            }
         }
     }
 }
 /*----------------------MOBILE DEVICES----------------------*/
 @media screen and (max-width: 768px){
-    header {
-        .header-content {
-            .logo-navbar-container {
-                .navbar{
-                    display: none;
-                }
-            }
-
-            .buttons-container {
-                display: none;
-            }
-
-            .mobile-navbar{
-                display: block;
-            }
-        }
-    }
-}
-/*----------------------TABLET DEVICES----------------------*/
-@media only screen and (max-width: 768px ) and (max-width:1023px){
-    header {
-        .header-content {
-            .logo-navbar-container {
-                .navbar{
-                    display: none;
-                }
-            }
-
-            .buttons-container {
-                display: none;
-            }
-
-            .mobile-navbar{
-                display: block;
-            }
-        }
-    }
-}
-/*----------------------LAPTOP DEVICES----------------------*/
-@media only screen and (max-width: 1024px ) and (max-width:1439px) {
     header {
         button.cv-btn {
             border-radius: 50%;
@@ -161,8 +62,16 @@ header {
                 display: block !important;
             }
         }
+        .header-content {
+            .logo-navbar-container {
+                .navbar{
+                    display: none;
+                }
+            }
+
+            .mobile-navbar{
+                display: block;
+            }
+        }
     }
-}
-/*----------------------DESCKTOP DEVICES----------------------*/
-@media only screen and(max-width: 1440px ){
 }

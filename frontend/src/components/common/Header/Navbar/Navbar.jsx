@@ -4,7 +4,9 @@ import './Navbar.scss';
 export const Navbar = ({handleTakeMeUp}) => {
     const [activeIndex, setActiveIndex] = useState(0);
 
-    const navItems = ["home", "about", "skills", "services", "resume", "portfolio", "contact"];
+    const navItems = React.useMemo(() => [
+        "home", "about", "skills", "services", "resume", "portfolio", "contact"
+    ], []);
 
     const handleClick = (index) => {
         setActiveIndex(index);

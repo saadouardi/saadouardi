@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Header } from '../src/components/common/Header/Header';
 import { Main } from "./sections/Main/Main";
 import { About } from "./sections/About/About";
@@ -11,10 +11,26 @@ import { Footer } from '../src/components/common/Footer/Footer';
 import { TakeMeUp } from '../src/components/common/TakeMeUp/TakeMeUp';
 
 const App = () => {
+  const [currentTheme, setCurrentTheme] = useState(localStorage.getItem("theme") || "bright");
+
+  useEffect(() => {
+    const onStorage = () => {
+      setCurrentTheme(localStorage.getItem("theme") || "bright");
+    };
+    window.addEventListener("storage", onStorage);
+    // Also update theme if changed in this tab
+    const themeInterval = setInterval(onStorage, 0);
+
+    return () => {
+      window.removeEventListener("storage", onStorage);
+      clearInterval(themeInterval);
+    };
+  }, []);
+
   return (
     <>
       <Header/>
-      <main>
+      <main className={currentTheme === 'dark' ? 'dark-theme' : 'light-theme'}>
         <Main/>
         <About/>
         <SkillSection/>
