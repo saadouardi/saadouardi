@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/saadouardi/static/css/main.35e07be4.css",
-    "main.js": "/saadouardi/static/js/main.c4473ecc.js",
+    "main.js": "/saadouardi/static/js/main.5443f85c.js",
     "static/js/453.dc393c8f.chunk.js": "/saadouardi/static/js/453.dc393c8f.chunk.js",
     "static/media/profile-backend.png": "/saadouardi/static/media/profile-backend.65f5509502065b951d27.png",
     "static/media/profile-frontend.png": "/saadouardi/static/media/profile-frontend.3d6ecc9a37593378a425.png",
@@ -26,11 +26,11 @@
     "static/media/morocco.svg": "/saadouardi/static/media/morocco.97605469af452a2136581fc627b6f3d9.svg",
     "index.html": "/saadouardi/index.html",
     "main.35e07be4.css.map": "/saadouardi/static/css/main.35e07be4.css.map",
-    "main.c4473ecc.js.map": "/saadouardi/static/js/main.c4473ecc.js.map",
+    "main.5443f85c.js.map": "/saadouardi/static/js/main.5443f85c.js.map",
     "453.dc393c8f.chunk.js.map": "/saadouardi/static/js/453.dc393c8f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.35e07be4.css",
-    "static/js/main.c4473ecc.js"
+    "static/js/main.5443f85c.js"
   ]
 }

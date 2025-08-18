@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.scss';
 
-export const Navbar = ({handleTakeMeUp}) => {
+export const Navbar = ({onClick}) => {
     const [activeIndex, setActiveIndex] = useState(0);
 
     const navItems = React.useMemo(() => [
@@ -11,7 +11,7 @@ export const Navbar = ({handleTakeMeUp}) => {
     const handleClick = (index) => {
         setActiveIndex(index);
         if (index === 0) {
-            handleTakeMeUp();
+            onClick();
         }
         // Scroll to the corresponding section
         const section = document.getElementById(navItems[index]);
@@ -56,7 +56,7 @@ export const Navbar = ({handleTakeMeUp}) => {
                 <a 
                     key={index}
                     href={`#${navItem.toLowerCase()}`}
-                    className={`${activeIndex === index ? 'active' : ''}`}
+                    className={`nav-item ${activeIndex === index ? 'active' : ''}`}
                     onClick={ () => handleClick(index)}
                 >
                     {navItem}

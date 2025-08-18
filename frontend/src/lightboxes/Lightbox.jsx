@@ -5,7 +5,7 @@ export const Lightbox = ({Title, Description, onClose}) => {
     return (
         <>
             <div className='main-lightbox'>
-                <div className='lightbox'>
+                <div className='lightbox container'>
                     <div className='lightbox-content'>
                         <div className='lightbox-header'>
                             <div className='lightbox-header-content'>
@@ -13,7 +13,7 @@ export const Lightbox = ({Title, Description, onClose}) => {
                                     <span>{Title}</span>
                                 </div>
                                 <div 
-                                    className='close-btn' 
+                                    className='close-btn bg-danger' 
                                     onClick={onClose}
                                 >
                                     <svg 

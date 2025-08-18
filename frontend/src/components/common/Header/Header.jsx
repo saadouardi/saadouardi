@@ -79,10 +79,16 @@ export const Header = () => {
         if(mode === 'bright') {
             localStorage.setItem("theme", "dark");
             document.querySelector('header').style.backgroundColor = 'var(--dark-secondary-bg)';
+            document.querySelectorAll('.navbar .nav-item').forEach((item, _) =>{
+                item.style.color = 'var(--dark-link-color)';
+            })
 
         } else {
             localStorage.setItem("theme", "bright");
             document.querySelector('header').style.backgroundColor = 'var(--secondary-bg)';
+            document.querySelectorAll('.navbar .nav-item').forEach((item, _) => {
+                item.style.color = 'var(--link-color)';
+            })
         }
     })
 
@@ -117,8 +123,8 @@ export const Header = () => {
             <header id='home'>
                 <div className="header-content">
                     <div className='logo-navbar-container'>
-                        <Logo   handleTakeMeUp={handleTakeMeUp}  />
-                        <Navbar   handleTakeMeUp={handleTakeMeUp}  />
+                        <Logo   onClick={handleTakeMeUp}  />
+                        <Navbar   onClick={handleTakeMeUp}  />
                     </div>
                     <div className='buttons-container flex-center-center'>
                         <button 
@@ -208,7 +214,7 @@ export const Header = () => {
                                     )
                             }
                             {isMobileNavbarOpen && (
-                                <div className='dropdown-menu-content'>
+                                <div className='dropdown-menu-content container'>
                                     <ul className='d-flex flex-column gap-2 p-0 align-items-start justify-content-center'>
                                         <li 
                                             className='d-flex align-items-center justify-content-center gap-2 w-100 rounded-2 border-2 border'
