@@ -26,9 +26,9 @@ export const Resume = ({Flag, Program, Degree, DegreeDetails, DegreeFrom, Date})
                     <h5>{Degree}</h5>
                     <p>{DegreeDetails}</p>
                 </div>
-                <div className="date__container">
+                <div className="date-container">
                     <span>{DegreeFrom}</span>
-                    <div>
+                    <div className='d-flex align-items-center justify-content-center gap-2'>
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" 
                             viewBox="0 0 24 24" 

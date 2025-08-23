@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import CV from '../../../assets/pdf/saad_ouardi_cv.pdf';
 import ProfileFrontend from '../../../assets/images/main/profile-frontend.png';
 import { Logo } from './Logo/Logo';
 import { Navbar } from './Navbar/Navbar';
@@ -159,8 +160,8 @@ export const Header = () => {
                             )}
                         </button>
                         <a 
-                            href="./" 
-                            download="Resume.pdf"
+                            href={CV} 
+                            download="saad_ouardi_cv.pdf"
                             title='Download CV'
                             className='cv-link'
                         >

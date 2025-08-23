@@ -22,52 +22,74 @@ export const ServicesSection = () => {
         </svg>
     )
 
-    const DesignIcon = () => (
+    const DatabaseIcon = () => (
         <svg 
             xmlns="http://www.w3.org/2000/svg" 
-            viewBox="0 0 24 24" 
-            fill="currentColor"
+            width="16" 
+            height="16" 
+            fill="currentColor" 
+            viewBox="0 0 16 16"
         >
-            <path d="M12 2C17.5222 2 22 5.97778 22 10.8889C22 13.9556 19.5111 16.4444 16.4444 16.4444H14.4778C13.5556 16.4444 12.8111 17.1889 12.8111 18.1111C12.8111 18.5333 12.9778 18.9222 13.2333 19.2111C13.5 19.5111 13.6667 19.9 13.6667 20.3333C13.6667 21.2556 12.9 22 12 22C6.47778 22 2 17.5222 2 12C2 6.47778 6.47778 2 12 2ZM7.5 12C8.32843 12 9 11.3284 9 10.5C9 9.67157 8.32843 9 7.5 9C6.67157 9 6 9.67157 6 10.5C6 11.3284 6.67157 12 7.5 12ZM16.5 12C17.3284 12 18 11.3284 18 10.5C18 9.67157 17.3284 9 16.5 9C15.6716 9 15 9.67157 15 10.5C15 11.3284 15.6716 12 16.5 12ZM12 9C12.8284 9 13.5 8.32843 13.5 7.5C13.5 6.67157 12.8284 6 12 6C11.1716 6 10.5 6.67157 10.5 7.5C10.5 8.32843 11.1716 9 12 9Z"></path>
+            <path d="M4.318 2.687C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4c0-.374.356-.875 1.318-1.313M13 5.698V7c0 .374-.356.875-1.318 1.313C10.766 8.729 9.464 9 8 9s-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777A5 5 0 0 0 13 5.698M14 4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16s3.022-.289 4.096-.777C13.125 14.755 14 14.007 14 13zm-1 4.698V10c0 .374-.356.875-1.318 1.313C10.766 11.729 9.464 12 8 12s-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10s3.022-.289 4.096-.777A5 5 0 0 0 13 8.698m0 3V13c0 .374-.356.875-1.318 1.313C10.766 14.729 9.464 15 8 15s-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13s3.022-.289 4.096-.777c.324-.147.633-.323.904-.525"/>
         </svg>
     )
 
-    const servicesList = [
-        {
-            Icon: FrontendIcon,
-            Title: 'FRONTEND',
-            Description: [
-                "I can build full app using React",
-                "I can build full app using HTML/CSS/JS",
-                "I can build full app using Bootstrap",
-                "I can build full app using Tailwind",
-            ]
-        },
-        {
-            Icon: BackendIcon,
-            Title: 'BACKEND',
-            Description: [
-                "I can build full app using Express.js",
-            ]
-        },
-        {
-            Icon: DesignIcon,
-            Title: 'DESIGN',
-            Description: [
-                "I can build full app using Figma",
-            ]
-        },
-        {
-            Icon: FrontendIcon,
-            Title: 'EDITING',
-            Description: [
-                "I can build full app using React",
-                "I can build full app using HTML/CSS/JS",
-                "I can build full app using Bootstrap",
-                "I can build full app using Tailwind",
-            ]
-        }
-    ];
+    const HostIcon = () => (
+        <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="16" 
+            height="16" 
+            fill="currentColor" 
+            viewBox="0 0 16 16"
+        >
+            <path d="M5 7h3V4H5z"/>
+            <path d="M1 2a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-2H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 9H1V8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6H1V5H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 2zm11 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0zm2 0a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0zM3.5 10a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zM4 4h-.5a.5.5 0 0 0 0 1H4v1h-.5a.5.5 0 0 0 0 1H4a1 1 0 0 0 1 1v.5a.5.5 0 0 0 1 0V8h1v.5a.5.5 0 0 0 1 0V8a1 1 0 0 0 1-1h.5a.5.5 0 0 0 0-1H9V5h.5a.5.5 0 0 0 0-1H9a1 1 0 0 0-1-1v-.5a.5.5 0 0 0-1 0V3H6v-.5a.5.5 0 0 0-1 0V3a1 1 0 0 0-1 1m7 7.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5"/>
+        </svg>
+    )
+
+const servicesList = [
+    {
+        Icon: FrontendIcon,
+        Title: 'Frontend',
+        Description: [
+            "Building full-featured apps using React & Next.js",
+            "Developing responsive websites with HTML, CSS & JavaScript",
+            "Creating modern UI components with Bootstrap",
+            "Designing fast and scalable interfaces using Tailwind CSS",
+        ]
+    },
+    {
+        Icon: BackendIcon,
+        Title: 'Backend',
+        Description: [
+            "Developing RESTful APIs with Express.js",
+            "Building scalable backend services with Node.js",
+            "Implementing authentication and authorization systems",
+            "Integrating third-party APIs and services",
+        ]
+    },
+    {
+        Icon: DatabaseIcon,
+        Title: 'Database',
+        Description: [
+            "Designing and managing relational databases with MySQL & PostgreSQL",
+            "Working with NoSQL databases like MongoDB",
+            "Optimizing queries for performance and scalability",
+            "Ensuring data integrity, security, and backups",
+        ]
+    },
+    {
+        Icon: HostIcon,
+        Title: 'Hosting',
+        Description: [
+            "Deploying applications on Vercel, Netlify, and Heroku",
+            "Managing cloud infrastructure with AWS & DigitalOcean",
+            "Configuring CI/CD pipelines for smooth deployments",
+            "Monitoring and maintaining applications post-launch",
+        ]
+    }
+];
+
 
     return(
         <section id='services'>

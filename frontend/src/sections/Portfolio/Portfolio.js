@@ -10,7 +10,7 @@ export const Portfolio = () => {
     const projectsList = [
         {image: IMG1, name: 'Master Isolation', description: 'Master Isolation', link:'https://github.com/saadouardi/masterisolation'},
         {image: IMG2, name: 'Dashboard', description: 'Admin Dashboard', link:' https://github.com/saadouardi/admin-dashboard'},
-        {image: IMG3, name: 'Restaurant', description: 'Freshbite Restaurant Website', link:'https://github.com/saadouardi/freshbite'},
+        {image: IMG3, name: 'Restaurant', description: 'Freshbite Restaurant Website', link:'https://saadouardi.github.io/freshbite/#/'},
         {image: IMG2, name: 'Nike', description: 'Nike e-commerce website', link:'https://saadouardi.github.io/nike/'},
         {image: IMG4, name: 'ToDoList', description: 'ToDoList', link:'https://saadouardi.github.io/checklist/'},
     ]

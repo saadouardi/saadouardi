@@ -82,7 +82,7 @@ export const Main = () => {
                                                 typeSpeed={70}
                                                 deleteSpeed={80}
                                                 delaySpeed={1000}
-                                                words={['Frontend', 'Backend', 'Full-Stack']}
+                                                words={['Frontend', 'Backend', 'Software']}
                                             />
                                         </span>
                                         <span> Developer</span>

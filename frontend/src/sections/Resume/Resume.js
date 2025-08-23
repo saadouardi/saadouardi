@@ -10,30 +10,32 @@ import Germany from '../../assets/images/Flags/germany.png';
 
 export const ResumeSection = () => {
     const educationList = [
-        {
-            Flag: Morocco,
-            Program: 'HIGHSCHOOL DEGREE',
-            Degree: 'MATHEMATICAL SCIENCE A',
-            DegreeDetails: 'My high school education in Morocco, majoring in Science Mathematics, laid a solid foundation for my journey into computer science by fostering critical thinking and problem-solving abilities essential for technical fields.',
-            DegreeFrom: 'IBNOU CHOHAID QUALIFICATION',
-            Date: '2018-2021'
-        },
-        {
-            Flag: USA,
-            Program: 'BACHELOR DEGREE',
-            Degree: 'COMPUTER SCIENCE',
-            DegreeDetails: 'During my time at Minnesota State University, I gained valuable insights and practical skills in computer science, enriching my understanding of programming languages and software development methodologies.',
-            DegreeFrom: 'Minnesota State University',
-            Date: '2022-2023'
-        },
-        {
-            Flag: Germany,
-            Program: 'Intensive German Course',
-            Degree: 'Language Certificate B1',
-            DegreeDetails: 'At Evolanguage School in Frankfurt, I have immersed myself in intensive German language studies, enhancing my proficiency and communication skills to navigate effectively in a German-speaking environment.',
-            DegreeFrom: 'Evolanguage School',
-            Date: '2023-2024'
-        }
+    {
+        Flag: Morocco,
+        Program: 'High School Degree',
+        Degree: 'Mathematical Sciences A',
+        DegreeDetails:
+        'Completed secondary education in Morocco with a focus on Mathematical Sciences, developing strong analytical and problem-solving skills. This foundation sparked my interest in computer science and prepared me for further studies in technology.',
+        DegreeFrom: 'Ibnou Chohaid Qualification',
+        Date: '2018 - 2021'
+    },
+    {
+        Flag: USA,
+        Program: 'Bachelor Studies',
+        Degree: 'Computer Science',
+        DegreeDetails:
+        'Studied Computer Science at Minnesota State University for two semesters, gaining hands-on practice in programming, algorithms, and software design. The international setting strengthened my technical skills and adaptability.',
+        DegreeFrom: 'Minnesota State University, Mankato',
+        Date: '2022 - 2023'
+    },
+    {
+        Flag: Germany,
+        Program: 'German Language Studies',
+        Degree: 'TELC B1 Certificate',
+        DegreeDetails: 'Completed an intensive German course at Evolanguage School in Frankfurt, achieving the TELC B1 Certificate. This training improved my communication and enables effective integration in German academic and professional settings.',
+        DegreeFrom: 'Evolanguage School, Frankfurt',
+        Date: '2023 - 2024'
+    }
     ];
 
     const experienceList = [
@@ -42,27 +44,24 @@ export const ResumeSection = () => {
             Company: 'Master Isolation',
             Position: 'Software Engineer',
             Location: 'Casablanca, Morocco',
-            Responsibilities: 'My experience at Master Isolation as a web developer provided me with hands-on experience collaborating within a team to develop an ecommerce website, honing my skills in coding, and project management in a real-world setting.',
-            Date: '2021-2024'
-
+            Responsibilities: 'Developed the company’s official website (www.masterisolation.com) from end to end, including frontend, backend, database design, and hosting. Collaborated with management to translate business requirements into scalable digital solutions.',
+            Date: '2021 - 2024'
         },
         {
             Flag: Netone,
-            Company: 'Netone',
+            Company: 'NetOne',
             Position: 'Frontend Developer',
             Location: 'Casablanca, Morocco',
-            Responsibilities: 'During my tenure at NetOne as a frontend developer, I contributed to the development of various projects, sharpening my expertise in crafting user-friendly interfaces and enhancing my proficiency in frontend',
-            Date: '2022-2023'
-
+            Responsibilities: 'Contributed to multiple client projects by building modern, user-friendly interfaces with React and Tailwind. Improved website performance and accessibility while working closely with designers and backend developers.',
+            Date: '2022 - 2023'
         },
         {
             Flag: Freelance,
             Company: 'Freelance',
             Position: 'Full Stack Developer',
-            Location: 'World Wide',
-            Responsibilities: 'Through my freelance work on platforms like Fiverr, I have cultivated a diverse skill set by tackling a range of projects, This experience has not only broadened my technical expertise but also refined my ability to deliver',
-            Date: '2018-2024'
-
+            Location: 'Worldwide',
+            Responsibilities: 'Delivered diverse freelance projects on platforms like Fiverr, covering both frontend and backend development. Strengthened my technical expertise and client communication skills while consistently meeting deadlines and project goals.',
+            Date: '2018 - 2024'
         }
     ];
 
