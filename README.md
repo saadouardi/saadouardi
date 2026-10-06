@@ -1,16 +1,43 @@
-## Hi there 👋
+Hi, I'm Saad Ouardi 👋
+Applied Computer Science student and Full-Stack Developer based in Germany.
 
-<!--
-**saadouardi/saadouardi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I build web applications with a focus on:
 
-Here are some ideas to get you started:
+React / Next.js
+TypeScript / JavaScript
+Python / FastAPI
+Node.js / Express
+PostgreSQL / MySQL
+REST APIs
+Docker / Git
+Featured Projects
+Metacashcup
+Full-stack matchmaking platform with authentication, profiles, matching, chat and administration workflows.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Stack: React, FastAPI, PostgreSQL, SQLAlchemy, Docker
+
+Technical Case Study
+
+TripTrack
+Full-stack team project with CRUD workflows, relational data modeling and REST API integration.
+
+Stack: Next.js, TypeScript, Express, MySQL
+
+Repository
+
+FastAPI Glass App
+Backend-focused CRUD application with validation, relational models and REST endpoints.
+
+Stack: Python, FastAPI, SQLite, REST API
+
+Repository
+
+Current Focus
+Full-Stack Software Development
+Backend Engineering
+API Integration
+AI-enabled applications
+Clean architecture and maintainable code
+Links
+Portfolio: https://saadouardi.vercel.app
+LinkedIn: https://linkedin.com/in/saad-ouardi
