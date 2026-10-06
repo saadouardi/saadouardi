@@ -1,53 +1,52 @@
 # Hi, I'm Saad Ouardi 👋
 
-Applied Computer Science student and Full-Stack Developer based in Germany.
+**Applied Computer Science Student · Full-Stack Developer**
 
-I build web applications with a focus on:
+I build web applications from responsive interfaces to REST APIs and relational databases, with a focus on clean architecture, maintainable code, and practical product development.
 
-- React / Next.js
-- TypeScript / JavaScript
-- Python / FastAPI
-- Node.js / Express
-- PostgreSQL / MySQL
-- REST APIs
-- Docker / Git
+[Portfolio](https://saadouardi.vercel.app) · [LinkedIn](https://www.linkedin.com/in/saad-ouardi) · [Email](mailto:saad.ouardi.developer@gmail.com)
 
-## Featured Projects
+---
+
+## Tech I work with
+
+**Frontend:** React · Next.js · TypeScript · JavaScript · HTML · CSS/SCSS · Tailwind CSS  
+**Backend:** Python · FastAPI · Node.js · Express · Django · REST APIs  
+**Data:** PostgreSQL · MySQL · SQLite · SQLAlchemy  
+**Engineering:** Git · GitHub · Docker · Postman · Vercel · Render
+
+## Featured projects
+
+| Project | What it demonstrates | Stack |
+| --- | --- | --- |
+| **Metacashcup** | Authentication, profiles, matchmaking, chat, admin workflows, relational backend design | React · FastAPI · PostgreSQL · SQLAlchemy · Docker |
+| **TripTrack** | Full-stack teamwork, CRUD workflows, N:M relations, search, REST integration | Next.js · TypeScript · Express · MySQL |
+| **FastAPI Glass App** | Python API design, validation, relational data, frontend/backend separation | React · FastAPI · SQLite |
+| **Dashboard App** | Typed React UI, API integration, filtering/sorting, responsive dashboard patterns | React · TypeScript · FastAPI |
 
 ### Metacashcup
-Full-stack matchmaking platform with authentication, profiles, matching, chat and administration workflows.
+The repository is private because the project is still actively developed. A technical case study is available here:
 
-**Stack:** React, FastAPI, PostgreSQL, SQLAlchemy, Docker
+[View Technical Case Study](https://www.linkedin.com/in/saad-ouardi/overlay/Project/668956652/treasury/?profileId=ACoAAD3oEa0BN9gPGWv-D7MLs4txTyR6ICY1JdI)
 
-[Technical Case Study](YOUR_LINKEDIN_CASE_STUDY_LINK)
+### Public repositories
+- [TripTrack](https://github.com/saadouardi/triptrack)
+- [FastAPI Glass App](https://github.com/saadouardi/fastapi-glass-app)
+- [Dashboard App](https://github.com/saadouardi/dashboard-app)
+- [Shopping List](https://github.com/saadouardi/shopping-list)
+- [React + TypeScript Developer Challenge](https://github.com/saadouardi/dev-workout-react-typescript)
+- [Kotlin + Spring Boot Developer Challenge](https://github.com/saadouardi/dev-workout-backend-kotlin)
 
----
-
-### TripTrack
-Full-stack team project with CRUD workflows, relational data modeling and REST API integration.
-
-**Stack:** Next.js, TypeScript, Express, MySQL
-
-[Repository](https://github.com/saadouardi/triptrack)
-
----
-
-### FastAPI Glass App
-Backend-focused CRUD application with validation, relational models and REST endpoints.
-
-**Stack:** Python, FastAPI, SQLite, REST API
-
-[Repository](https://github.com/saadouardi/fastapi-glass-app)
-
-## Current Focus
+## Current focus
 
 - Full-Stack Software Development
-- Backend Engineering
-- API Integration
-- AI-enabled applications
-- Clean architecture and maintainable code
+- Backend Engineering and REST APIs
+- Relational data modeling
+- AI-enabled applications and integrations
+- Writing clearer, better-tested, maintainable software
 
-## Links
+## Open to opportunities
 
-- Portfolio: https://saadouardi.vercel.app
-- LinkedIn: https://linkedin.com/in/saad-ouardi
+I'm currently looking for a **Werkstudent position in Software Development (16–20 h/week)** in Germany.
+
+**Languages:** Arabic (native) · English (fluent) · French (fluent) · German (professional working proficiency)
